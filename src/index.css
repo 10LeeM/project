@@ -1,0 +1,8 @@
+* {
+  transition: all 0.3s;
+}
+
+/* Overrides */
+.MuiListItem-root.Mui-selected {
+  background-color: #00cce4 !important;
+}

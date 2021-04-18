@@ -1,0 +1,33 @@
+.ourservices__card {
+  height: 250px;
+  width: 350px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: normal;
+  padding-top: 80px;
+}
+
+.ourservices__cardtitle {
+  color: #40394a;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ourservices__cardparagraph {
+  color: #6e7582;
+  margin-top: 2px;
+  margin: 0px 40px 0px 40px;
+  text-align: left;
+}
+
+.ourservices__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  /* width: 1200px; */
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,55 @@
+.mission__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 40px;
+  padding-left: 60px;
+  padding-left: 30px;
+}
+
+.mission__row img {
+  max-width: 300px;
+}
+
+.mission__row h1 {
+  color: #555;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.mission__paragraph {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.mission__image {
+  padding-top: 180px;
+  padding-bottom: 200px;
+}
+
+.mission__paragraph {
+  text-align: left;
+  color: #9e9d89;
+}
+
+.btn {
+  display: inline-block;
+  background: #00cce4;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background: chocolate;
+}
+
+.btn i {
+  color: #fff;
+  padding: 5px;
+  letter-spacing: 5px;
+  background: #00cce4;
+}
