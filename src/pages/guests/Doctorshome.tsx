@@ -1,11 +1,17 @@
 import React from "react";
+import DoctorsDisplay from "./display/DoctorsDisplay";
+import Footer from "./Footer";
+
 
 
 const Doctorshome = () => {
  
 
   return (
-    <div></div>
+    <div>
+      <DoctorsDisplay/>
+      <Footer/>
+    </div>
    
   );
 };

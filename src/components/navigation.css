@@ -94,3 +94,35 @@ p{
   letter-spacing: 5px;
   background: #00cce4;
 }
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+.checkout{
+  color: chocolate;
+}
+
+/*- media query-*/
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #EAEFF4;
+    width: 100%;
+  }
+  nav ul li{
+    display: block;
+    margin-right: 20px;
+    
+    text-align: right;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}

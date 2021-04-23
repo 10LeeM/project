@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { sendReq } from "../../api/api";
 import { User as IUser } from "../../models/user";
 import { useLoading } from "../../utils/hooks";
+import Footer from "../guests/Footer";
 import "./login.css";
 
 type User = {
@@ -45,14 +46,26 @@ const Register = () => {
   useLoading(isLoading);
 
   return (
-    <>
-      <div className="wrapper login-2">
-        <div className="container1">
-          <div className="col-left">
-            <div className="login-form">
-              <h2>Create Account</h2>
-              <form
-                noValidate
+ 
+<div>
+
+
+<div className="account-page">
+        <div className="container">
+            <div className="row">
+                <div className="col-2">
+                <img src="image/home.png" width="100%" alt="" />
+                </div>
+                <div className="col-2">
+                    <div className="form-container">
+                        <div className="form-btn">
+                            
+                            <span>Register</span>
+                         
+                        </div>
+                      
+
+                        <form id="FormReg"   noValidate
                 onSubmit={(e) => {
                   e.preventDefault();
                   let pat = /^\S+@\S+\.\S+/i;
@@ -79,106 +92,79 @@ const Register = () => {
                     return toast(`Role is required`, { type: "error" });
                   }
                   registerUser(user!);
-                }}
-              >
-                <p>
-                  <input
-                    type="name"
-                    id="name"
-                    placeholder="Name"
-                    required
-                    onChange={onChange}
-                  />
-                </p>
-                <p>
-                  <input
-                    type="email"
-                    id="login"
-                    placeholder="Email"
-                    required
-                    onChange={onChange}
-                  />
-                </p>
-                <p>
-                  <input
-                    type="password"
-                    id="password"
-                    placeholder="Password"
-                    required
-                    onChange={onChange}
-                  />
-                </p>
+                }}>
 
-                <div className="row">
-                  <div className="col">
-                    <div className="row">
-                      <div className="col">
-                        <input
-                          className="button m-2"
-                          id="client"
-                          type="radio"
-                          value="client"
-                          checked={user?.role === "client"}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setUser({ ...user, role: "client" });
-                          }}
-                        />
-                      </div>
-                      <div className="col">Patient</div>
+
+                          <input  
+                           type="name"
+                           id="name"
+                           placeholder="Name"
+                           required
+                           onChange={onChange}
+                          />
+                          <input 
+                          type="email"
+                          id="login"
+                          placeholder="Email"
+                          required
+                          onChange={onChange}
+                          />
+                          <input 
+                          type="password"
+                          id="password"
+                          placeholder="Password"
+                          required
+                          onChange={onChange}
+                          />
+
+<div className="contain">
+<label >Doctor
+        <input 
+          id="doctor"
+          type="radio"
+          value="doctor"
+          checked={user?.role === "doctor"}
+          onClick={(e) => {
+            e.stopPropagation();
+            setUser({ ...user, role: "doctor" });
+          }}
+        />
+        <span className="checkmark" />
+      </label>
+
+      <label >Patient
+        <input 
+          id="client"
+          type="radio"
+          value="client"
+          checked={user?.role === "client"}
+          onClick={(e) => {
+            e.stopPropagation();
+            setUser({ ...user, role: "client" });
+          }}
+        />
+        <span className="checkmark" />
+      </label> </div>
+
+                          <button type="submit" className="btn" 
+                          onClick={() => {}}
+                          >Register</button>
+                          <a href="/login"  className="btn">   Login</a>
+                        
+                          <a href="/" >Forgot password</a>
+                        </form>
+
                     </div>
-                  </div>
-                  <div className="col">
-                    <div className="row">
-                      <div className="col">
-                        <input
-                          className="button m-2"
-                          id="doctor"
-                          type="radio"
-                          value="doctor"
-                          checked={user?.role === "doctor"}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setUser({ ...user, role: "doctor" });
-                          }}
-                        />
-                      </div>
-                      <div className="col">Doctor</div>
-                    </div>
-                  </div>
+               
                 </div>
-
-                <div>
-                  <button>Sign up</button>
-                </div>
-
-                <p>
-                  <Link to="/login">Login</Link>
-                </p>
-                <p>
-                  <Link to="/forget">Forget Password?</Link>
-                </p>
-              </form>
             </div>
-          </div>
 
-          <div className="col-right">
-            <div className="login-social">
-              <h2>Register with</h2>
-              <Link to="#" className="btn btn-go">
-                Google
-              </Link>
-              <Link to="#" className="btn btn-fb">
-                Facebook
-              </Link>
-              <Link to="#" className="btn btn-tw">
-                Twitter
-              </Link>
-            </div>
-          </div>
         </div>
-      </div>
-    </>
+      
+    </div>
+    <Footer/>
+    </div>
+ 
   );
 };
 

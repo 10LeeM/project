@@ -14,6 +14,12 @@ import Products from "../pages/admin/Products";
 import Vitals from "../pages/patient/Vitals";
 import Doctorshome from "../pages/guests/Doctorshome";
 import Pharmacyhome from "../pages/guests/Pharmacyhome";
+import Footer from "../pages/guests/Footer";
+import DoctorView from "../pages/guests/single/DoctorView";
+import ProductView from "../pages/guests/single/ProductView";
+import Cart from "../pages/guests/single/Cart";
+import Message from "../message/Message";
+
 
 const Routes = () => {
   return (
@@ -23,9 +29,15 @@ const Routes = () => {
         <GuestRoute path={paths.index} component={Index} exact />
         <GuestRoute path={paths.login} component={Login} exact />
         <GuestRoute path={paths.register} component={Register} exact />
+        <GuestRoute path={paths.message} component={Message} exact />
         <GuestRoute path={paths.doctorshome} component={Doctorshome} exact />
         <GuestRoute path={paths.pharmacyhome} component={Pharmacyhome} exact />
+        <GuestRoute path={paths.doctorview} component={DoctorView} exact />
+        <GuestRoute path={paths.productview} component={ProductView} exact />
+        <GuestRoute path={paths.cart} component={Cart} exact />
+        <GuestRoute path={paths.footer} component={Footer} exact />
         <DashRoute path={paths.dashboard} component={Dummy} />
+        
         {/* Admin */}
         <DashRoute path={paths.admin.doctors} component={Doctors} />
         <DashRoute path={paths.admin.patients} component={Patients} />

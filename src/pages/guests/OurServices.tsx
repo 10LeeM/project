@@ -6,25 +6,27 @@ const Ourservices = () => {
   const servcices = [
     {
       icon: "cog",
-      title: "DOCTOR MANAGEMENT SYSTEM",
-      description: `Everyday a doctor serves 50-100 patients ,75% of these patients
-  depend on traditional ways of storing data.With Ohospital,DMS a
-  doctor can manage the patient in one place`,
+      title: "Online Consultancy",
+      description: `Ohospital allows patients to easily and quickly find doctors, Consult
+       and follow up with the doctors.`,
     },
     {
       icon: "stats-up",
-      title: "Hospital Management System",
-      description: `Our hospital management is hosted over the cloud and fit any size of the hospital with option of own customize.`,
+      title: "Monitoring and Follow up",
+      description: `Doctor's are able to monitor patients with pre-condition, live follow up with
+      the patients.`,
     },
     {
       icon: "users",
-      title: "Ecommerce",
-      description: `Buying of health product is easy with Ohospital App and portal, with a few clicks the is bought and delivered to your place.`,
+      title: "Health Product & Medicine",
+      description: `We have make it easy for patients to purchase all their medical products, with few
+      click of button.`,
     },
     {
       icon: "layers",
-      title: "Pharmacy Management System",
-      description: `Our pharmacy management system is easy to use and can be access anytime. Our focus is dedicated to build the best place to manage business.`,
+      title: "Book and Management",
+      description: `Saving time is one of the drive at Ohospital, we ensure patients and doctors save time and
+      are able to focus on what is important. `,
     },
    
   ];

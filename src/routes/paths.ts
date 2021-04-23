@@ -2,10 +2,16 @@ const paths = {
   index: "/",
   doctors: "/doctors",
   login: "/login",
+  
   register: "/register",
   dashboard: "/dashboard",
   doctorshome:"/doctorshome",
   pharmacyhome: "/pharmacyhome",
+  doctorview: "/doctorview",
+  cart: "/cart",
+  message: "/message",
+  productview: "/productview",
+  footer: "/footer",
 
   common: {
     appointments: "/appointments",

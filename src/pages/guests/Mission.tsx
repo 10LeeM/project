@@ -1,4 +1,5 @@
 import React from "react";
+import Featureddoctors from "./Featureddoctors";
 import "./mission.css";
 
 const Mission = () => {
@@ -21,11 +22,14 @@ const Mission = () => {
           <br />
          get treatment whether they can pay or not.
         </p>
-        <a href="" className="btn"><i className="fa fa-android" />Download App</a>
+        <a href="/" className="btn"><i className="fa fa-android" />Download App</a>
       </div>
       <div className="mission__image">
         <img src="/image/mission.jpg" alt="my hospital" />
       </div>
+    
+        <Featureddoctors/>
+     
     </div>
   );
 };

@@ -7,6 +7,7 @@ import { sendReq } from "../../api/api";
 import { IDoctor, IPatient, Role, User as IUser } from "../../models/user";
 import { login, setRole } from "../../store/slices/userSlice";
 import { useLoading } from "../../utils/hooks";
+import Footer from "../guests/Footer";
 import "./login.css";
 
 type User = {
@@ -124,60 +125,56 @@ const Login = () => {
   useLoading(isLoading, logginIn);
 
   return (
-    <div className="wrapper login-2">
-      <div className="container1">
-        <div className="col-left">
-          <div className="login-form">
-            <h2>Login</h2>
-            <form noValidate onSubmit={onSubmit}>
-              <p>
-                <input
-                  id="login"
-                  type="email"
-                  placeholder="Email"
-                  required
-                  onChange={onChange}
-                />
-              </p>
-              <p>
-                <input
-                  id="password"
-                  type="password"
-                  placeholder="Password"
-                  required
-                  onChange={onChange}
-                />
-              </p>
-              <p>
-                <button className="button" type="submit" onClick={() => {}}>
-                  Log in
-                </button>
-              </p>
-              <p>
-                <Link to="/register">Register</Link>
-              </p>
-              <p>
-                <Link to="/forget">Forget Password?</Link>
-              </p>
-            </form>
-          </div>
+
+    <div>
+
+
+    <div className="account-page">
+    <div className="container">
+        <div className="row">
+            <div className="col-2">
+            <img src="image/home.png" width="100%" alt="" />
+            </div>
+            <div className="col-2">
+                <div className="form-container">
+                    <div className="form-btn">
+                        <span>Login</span>
+                     
+                    </div>
+                    <form id="FormLogin" noValidate onSubmit={onSubmit}>
+                      <input 
+                      id="login"
+                      type="email"
+                       placeholder="Email"
+                      required
+                       onChange={onChange}/>
+
+                      <input type="password" placeholder="Password"
+                       id="password"
+                       required
+                       onChange={onChange}
+                      />
+                      <button type="submit" className="btn"
+                      onClick={() => {}}
+                      >Login</button>
+               
+                      <a href="/register"  className="btn">   Register</a>
+                      <a href="/" >Forgot password</a>
+                    </form>
+
+                  
+
+                </div>
+           
+            </div>
         </div>
-        <div className="col-right">
-          <div className="login-social">
-            <h2>Login with</h2>
-            <Link to="#" className="btn btn-go">
-              Google
-            </Link>
-            <Link to="#" className="btn btn-fb">
-              Facebook
-            </Link>
-            <Link to="#" className="btn btn-tw">
-              Twitter
-            </Link>
-          </div>
-        </div>
-      </div>
+
     </div>
+  
+</div>
+
+<Footer/>
+   </div>
   );
 };
 

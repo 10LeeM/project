@@ -15,11 +15,25 @@
   font-weight: 800;
 }
 
+.ourservices__card h1 {
+ color: #00cce4;
+ font-weight: bold;
+ padding-left: 30px;
+ padding-right: 10px;
+}
+
+.ourservices__card i {
+ padding-bottom: 30px;
+ color: #00cce4;
+ font-size: 40px;
+}
+
 .ourservices__cardparagraph {
   color: #6e7582;
   margin-top: 2px;
   margin: 0px 40px 0px 40px;
   text-align: left;
+  padding-left: 40px;
 }
 
 .ourservices__row {

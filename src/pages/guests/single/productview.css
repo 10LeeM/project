@@ -1,0 +1,56 @@
+.single-doctor{
+    margin-top: 50px;
+}
+
+.single-doctor .col-2 img{
+    padding: 0;
+    width: 480px;
+    padding-left: 60px;
+    height: 380px;
+}
+
+.single-doctor .col-2{
+    padding: 10px;
+}
+
+.single-doctor h4{
+    margin: 20px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.single-doctor h1{
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.single-doctor i{
+    color: #00cce4;
+}
+
+.single-doctor p{
+    font-size: 18px;
+}
+
+.single-doctor input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #00cce4;
+}
+
+.small-img-row2{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 10px;
+}
+
+
+.small-img-col2 img{
+   flex-basis: 24%;
+   cursor: pointer;
+}
+

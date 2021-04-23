@@ -1,0 +1,25 @@
+
+  .row-2{
+      justify-content: space-between;
+      margin: 100px auto 50px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-left: 30px;
+  }
+  .row-2 h2{
+      color: black;
+      font-weight: bold;
+  }
+
+  select {
+      border: 1px solid #00cce4;
+      padding: 5px;
+  }
+
+  select:focus{
+      outline: none;
+  }
