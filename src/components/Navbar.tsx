@@ -20,7 +20,7 @@ const Navbar = () => {
         <li> <Link to={paths.doctorshome}>Doctors</Link></li>
         <li> <Link to={paths.pharmacyhome}>Pharmacy</Link></li>
         <li> <Link to={paths.login}>Account</Link></li>
-   
+      
         </ul>
       </nav>
       <a href="/cart">
