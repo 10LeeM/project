@@ -1,6 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
 import { useMutation } from "react-query";
-import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { sendReq } from "../../api/api";
 import { User as IUser } from "../../models/user";

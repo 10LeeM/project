@@ -19,6 +19,9 @@ import DoctorView from "../pages/guests/single/DoctorView";
 import ProductView from "../pages/guests/single/ProductView";
 import Cart from "../pages/guests/single/Cart";
 import Message from "../message/Message";
+import Orders from "../pages/admin/Orders";
+import HistoryAdmin from "../pages/admin/HistoryAdmin";
+import MessagesAdmin from "../pages/admin/MessagesAdmin";
 
 
 const Routes = () => {
@@ -29,7 +32,7 @@ const Routes = () => {
         <GuestRoute path={paths.index} component={Index} exact />
         <GuestRoute path={paths.login} component={Login} exact />
         <GuestRoute path={paths.register} component={Register} exact />
-        <GuestRoute path={paths.message} component={Message} exact />
+      
         <GuestRoute path={paths.doctorshome} component={Doctorshome} exact />
         <GuestRoute path={paths.pharmacyhome} component={Pharmacyhome} exact />
         <GuestRoute path={paths.doctorview} component={DoctorView} exact />
@@ -37,11 +40,17 @@ const Routes = () => {
         <GuestRoute path={paths.cart} component={Cart} exact />
         <GuestRoute path={paths.footer} component={Footer} exact />
         <DashRoute path={paths.dashboard} component={Dummy} />
+       
         
         {/* Admin */}
         <DashRoute path={paths.admin.doctors} component={Doctors} />
         <DashRoute path={paths.admin.patients} component={Patients} />
         <DashRoute path={paths.admin.products} component={Products} />
+        <DashRoute path={paths.admin.orders} component={Orders} />
+        <DashRoute path={paths.admin.history} component={HistoryAdmin} />
+       <DashRoute path={paths.admin.messages} component={MessagesAdmin} />
+       <GuestRoute path={paths.admin.message} component={Message} exact />
+
 
         {/* Doctor */}
         <DashRoute path={paths.doctor.patients} component={Patients} />

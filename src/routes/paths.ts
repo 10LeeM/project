@@ -9,16 +9,17 @@ const paths = {
   pharmacyhome: "/pharmacyhome",
   doctorview: "/doctorview",
   cart: "/cart",
-  message: "/message",
+
   productview: "/productview",
   footer: "/footer",
 
   common: {
     appointments: "/appointments",
-    ewallet: "/e-wallet",
+    // ewallet: "/e-wallet",
     history: "/history",
     products: "/products",
     messages: "/messages",
+  
   },
   patient: {
     orders: "/orders",
@@ -34,7 +35,8 @@ const paths = {
     orders: "/admin/orders",
     history: "/admin/history",
     messages: "/admin/messages",
-    ewallet: "/admin/ewallet",
+    message: "/admin/message",
+    // ewallet: "/admin/ewallet",
   },
 };
 

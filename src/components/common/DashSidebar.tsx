@@ -57,11 +57,7 @@ const patient: TLink[] = [
     title: "Orders",
   },
 
-  {
-    icon: <AccountBalanceWallet />,
-    path: paths.common.ewallet,
-    title: "E Wallet",
-  },
+
   {
     icon: <HistoryOutlined />,
     path: paths.common.history,
@@ -91,11 +87,7 @@ const pharmacy: TLink[] = [
     title: "Orders",
   },
 
-  {
-    icon: <AccountBalanceWallet />,
-    path: paths.common.ewallet,
-    title: "E Wallet",
-  },
+ 
 
   {
     icon: <MessageOutlined />,
@@ -125,11 +117,7 @@ const doctors: TLink[] = [
     path: paths.patient.orders,
     title: "Orders",
   },
-  {
-    icon: <AccountBalanceWallet />,
-    path: paths.common.ewallet,
-    title: "E Wallet",
-  },
+ 
   {
     icon: <HistoryOutlined />,
     path: paths.common.history,
@@ -168,17 +156,13 @@ const admin: TLink[] = [
     path: paths.admin.orders,
     title: "Orders",
   },
-  {
-    icon: <AccountBalanceWallet />,
-    path: paths.admin.ewallet,
-    title: "E Wallet",
-  },
+ 
   {
     icon: <HistoryOutlined />,
     path: paths.admin.history,
     title: "History",
   },
-  {
+   {
     icon: <MessageOutlined />,
     path: paths.admin.messages,
     title: "Messages",
@@ -232,76 +216,4 @@ export const DashSideBar = () => {
   );
 };
 
-// const DashSidebar = () => {
-//   return (
-//     <>
-//       <div>
-//         <nav className="sidebar sidebar-offcanvas" id="sidebar">
-//           <ul className="nav">
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/pharmacydash">
-//                 <i className="mdi mdi-home menu-icon" />
-//                 <span className="menu-title">Dashboard</span>
-//               </Link>
-//             </li>
 
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/product">
-//                 <i className="mdi mdi-shopping menu-icon" />
-//                 <span className="menu-title">Product</span>
-//               </Link>
-//             </li>
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/addproduct">
-//                 <i className="mdi mdi-plus-circle menu-icon" />
-//                 <span className="menu-title">Add Product</span>
-//               </Link>
-//             </li>
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/orders">
-//                 <i className="mdi mdi-package-variant menu-icon" />
-//                 <span className="menu-title">Orders</span>
-//               </Link>
-//             </li>
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/completed">
-//                 <i className="mdi mdi-emoticon menu-icon" />
-//                 <span className="menu-title">Completed</span>
-//               </Link>
-//             </li>
-
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/earn">
-//                 <i className="mdi mdi-wallet menu-icon" />
-//                 <span className="menu-title">Earning</span>
-//               </Link>
-//             </li>
-
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/canceled">
-//                 <i className="mdi mdi-heart-broken menu-icon" />
-//                 <span className="menu-title">Canceled</span>
-//               </Link>
-//             </li>
-
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/pharmusermanager">
-//                 <i className="mdi mdi-file-document-box-outline menu-icon" />
-//                 <span className="menu-title">User Manager</span>
-//               </Link>
-//             </li>
-
-//             <li className="nav-item">
-//               <Link className="nav-link" to="/pharmsetting">
-//                 <i className="mdi mdi-wrench menu-icon" />
-//                 <span className="menu-title">Setting</span>
-//               </Link>
-//             </li>
-//           </ul>
-//         </nav>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default DashSidebar;

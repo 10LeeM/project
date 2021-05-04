@@ -99,6 +99,7 @@ interface EnhancedTableProps {
   classes: ReturnType<typeof useStyles>;
   numSelected: number;
   onRequestSort: (
+    
     event: React.MouseEvent<unknown>,
     property: keyof IDoctor
   ) => void;
