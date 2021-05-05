@@ -69,7 +69,7 @@ const patient: TLink[] = [
   },
   {
     icon: <MessageOutlined />,
-    path: paths.common.history,
+    path: paths.common.messages,
     title: "Messages",
   },
 ];
@@ -99,7 +99,7 @@ const pharmacy: TLink[] = [
 
   {
     icon: <MessageOutlined />,
-    path: paths.common.history,
+    path: paths.common.messages,
     title: "Messages",
   },
 ];
