@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
 import paths from "../../routes/paths";
 import {
-  AccountBalanceWallet,
   GroupOutlined,
   HistoryOutlined,
   MessageOutlined,
@@ -57,7 +56,6 @@ const patient: TLink[] = [
     title: "Orders",
   },
 
-
   {
     icon: <HistoryOutlined />,
     path: paths.common.history,
@@ -65,7 +63,7 @@ const patient: TLink[] = [
   },
   {
     icon: <MessageOutlined />,
-    path: paths.common.history,
+    path: paths.common.messages,
     title: "Messages",
   },
 ];
@@ -87,11 +85,9 @@ const pharmacy: TLink[] = [
     title: "Orders",
   },
 
- 
-
   {
     icon: <MessageOutlined />,
-    path: paths.common.history,
+    path: paths.common.messages,
     title: "Messages",
   },
 ];
@@ -117,7 +113,7 @@ const doctors: TLink[] = [
     path: paths.patient.orders,
     title: "Orders",
   },
- 
+
   {
     icon: <HistoryOutlined />,
     path: paths.common.history,
@@ -156,13 +152,13 @@ const admin: TLink[] = [
     path: paths.admin.orders,
     title: "Orders",
   },
- 
+
   {
     icon: <HistoryOutlined />,
     path: paths.admin.history,
     title: "History",
   },
-   {
+  {
     icon: <MessageOutlined />,
     path: paths.admin.messages,
     title: "Messages",
@@ -215,5 +211,3 @@ export const DashSideBar = () => {
     </>
   );
 };
-
-
