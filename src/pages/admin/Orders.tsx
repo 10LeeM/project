@@ -15,14 +15,14 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name: string, calories: number, fat: number, carbs: number, protein: number) {
-  return { name, calories, fat, carbs, protein };
+function createData(product: string, quantity: number, customer: string, contact: number, price: number) {
+  return { product, quantity, customer, contact, price };
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
+  createData('Frozen yoghurt', 159, 'Jane', 24, 4.0),
+  createData('Ice cream sandwich', 237, 'Jane', 37, 4.3),
+  createData('Eclair', 262,  'Jane', 24, 6.0),
 ];
 
 export default function Orders() {
@@ -31,27 +31,28 @@ export default function Orders() {
   return (
       <div> <div>
     <TableContainer component={Paper}>
+    <h2>In Progress</h2>
       <Table className={classes.table} aria-label="caption table">
-        <caption>A basic table example with a caption</caption>
+    
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Product</TableCell>
+            <TableCell align="right">Quantity</TableCell>
+            <TableCell align="right">Customer</TableCell>
+            <TableCell align="right">Contact</TableCell>
+            <TableCell align="right">Price</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.name}>
+            <TableRow key={row.product}>
               <TableCell component="th" scope="row">
-                {row.name}
+                {row.product}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right">{row.quantity}</TableCell>
+              <TableCell align="right">{row.customer}</TableCell>
+              <TableCell align="right">{row.contact}</TableCell>
+              <TableCell align="right">{row.price}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -62,27 +63,28 @@ export default function Orders() {
 <br/>
 <div>
 <TableContainer component={Paper}>
+  <h2>Completed</h2>
   <Table className={classes.table} aria-label="caption table">
-    <caption>A basic table example with a caption</caption>
+
     <TableHead>
       <TableRow>
-        <TableCell>Dessert (100g serving)</TableCell>
-        <TableCell align="right">Calories</TableCell>
-        <TableCell align="right">Fat&nbsp;(g)</TableCell>
-        <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-        <TableCell align="right">Protein&nbsp;(g)</TableCell>
+      <TableCell>Product</TableCell>
+            <TableCell align="right">Quantity</TableCell>
+            <TableCell align="right">Customer</TableCell>
+            <TableCell align="right">Contact</TableCell>
+            <TableCell align="right">Price</TableCell>
       </TableRow>
     </TableHead>
     <TableBody>
       {rows.map((row) => (
-        <TableRow key={row.name}>
+        <TableRow key={row.product}>
           <TableCell component="th" scope="row">
-            {row.name}
+            {row.product}
           </TableCell>
-          <TableCell align="right">{row.calories}</TableCell>
-          <TableCell align="right">{row.fat}</TableCell>
-          <TableCell align="right">{row.carbs}</TableCell>
-          <TableCell align="right">{row.protein}</TableCell>
+          <TableCell align="right">{row.quantity}</TableCell>
+          <TableCell align="right">{row.customer}</TableCell>
+          <TableCell align="right">{row.contact}</TableCell>
+          <TableCell align="right">{row.price}</TableCell>
         </TableRow>
       ))}
     </TableBody>

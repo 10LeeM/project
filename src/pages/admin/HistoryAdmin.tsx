@@ -24,18 +24,18 @@ const useRowStyles = makeStyles({
 
 function createData(
   name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number,
+  doctor: string,
+  condition: string,
+  prescription: string,
+  payment: string,
   price: number,
 ) {
   return {
     name,
-    calories,
-    fat,
-    carbs,
-    protein,
+    doctor,
+    condition,
+    prescription,
+    payment,
     price,
     history: [
       { date: '2020-01-05', customerId: '11091700', amount: 3 },
@@ -60,10 +60,10 @@ function Row(props: { row: ReturnType<typeof createData> }) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
-        <TableCell align="right">{row.calories}</TableCell>
-        <TableCell align="right">{row.fat}</TableCell>
-        <TableCell align="right">{row.carbs}</TableCell>
-        <TableCell align="right">{row.protein}</TableCell>
+        <TableCell align="right">{row.doctor}</TableCell>
+        <TableCell align="right">{row.condition}</TableCell>
+        <TableCell align="right">{row.prescription}</TableCell>
+        <TableCell align="right">{row.payment}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -105,11 +105,11 @@ function Row(props: { row: ReturnType<typeof createData> }) {
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-  createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
-  createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-  createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
+  createData('Frozen', 'yoghurt', 'yoghurt', 'yoghurt', 'yoghurt', 500),
+  createData('Ice', 'sandwich', 'sandwich', 'sandwich', 'sandwich', 500),
+  createData('Ice', 'sandwich', 'sandwich', 'sandwich', 'sandwich', 500),
+  createData('Ice', 'sandwich', 'sandwich', 'sandwich', 'sandwich', 500),
+  createData('Ice', 'sandwich', 'sandwich', 'sandwich', 'sandwich', 500),
 ];
 
 export default function HistoryAdmin() {
@@ -119,11 +119,11 @@ export default function HistoryAdmin() {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Patient</TableCell>
+            <TableCell align="right">Doctor</TableCell>
+            <TableCell align="right">Condition</TableCell>
+            <TableCell align="right">Prescription</TableCell>
+            <TableCell align="right">Payment</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
