@@ -22,6 +22,7 @@ import { AccountBalanceWallet, ExitToApp } from "@material-ui/icons";
 import { useDispatch } from "react-redux";
 import { logout } from "../../store/slices/userSlice";
 import { createMuiTheme } from "@material-ui/core/styles";
+import MessageIcon from '@material-ui/icons/Message';
 
 const theme = createMuiTheme({
   palette: {
@@ -180,6 +181,11 @@ const DashboardLayout: FC = ({ children }) => {
             <IconButton color="inherit">
               <Badge badgeContent={2} color="secondary">
                 <AccountBalanceWallet />
+              </Badge>
+            </IconButton>
+            <IconButton color="inherit">
+              <Badge badgeContent={2} color="secondary">
+              <a href="/admin/message"  ><MessageIcon /> </a>
               </Badge>
             </IconButton>
             <IconButton color="inherit" onClick={logoutUser}>

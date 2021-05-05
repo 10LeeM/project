@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useMutation, useQuery } from "react-query";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+
 import { toast } from "react-toastify";
 import { sendReq } from "../../api/api";
 import { IDoctor, IPatient, Role, User as IUser } from "../../models/user";

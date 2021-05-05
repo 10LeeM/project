@@ -24,8 +24,8 @@ const Navbar = () => {
         </ul>
       </nav>
       <a href="/cart">
-      <img src="image/cart.png" width="30px" height="30px" className="checkout" /></a>
-      <img src="image/menu.png" className="menu-icon" />
+      <img src="image/cart.png" width="30px" height="30px" className="checkout" alt=""/></a>
+      <img src="image/menu.png" className="menu-icon" alt=""/>
     </div>
     
     </div>

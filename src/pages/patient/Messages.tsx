@@ -1,12 +1,12 @@
-import React from 'react'
-import Message from '../../message/Message'
+import React from "react";
+import Message from "../../message/Message";
 
 const Messages = () => {
-    return (
-        <div>
-            <Message />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Message />
+    </div>
+  );
+};
 
-export default Messages
+export default Messages;

@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.contained{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #737984;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active{
+ 
+    width: 60px;
+  
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    
+}
+.navigation ul li:hover{
+    background: #03a9f4;
+}
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+
+.navigation ul li a{
+    position: relative;
+    width: 100%;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    
+    display: block;
+    min-width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa{
+    font-size: 20px;
+    color: #fff;
+}
+.navigation ul li a .title{
+    position: relative;
+   padding: 0 10px;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    
+}
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+
+.main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.main .topbar{
+    display: flex;
+    width: 100%;
+    background: #fff;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+} 
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    cursor: pointer;
+}
+.toggle::before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #111;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    padding: 0 10px;
+
+
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input{
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search label .fa{
+    position: absolute;
+    left: 15px;
+    top: 4px;
+}
+
+/*.user{
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}*/
+
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+ position: relative;
+ background: #fff;
+ padding: 20px;
+ display: flex;
+ justify-content: space-between;
+ cursor: pointer;
+}
+
+.cardBox .card .number{
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cardBox .card .cardName {
+    color: #999;
+}
+.cardBox .card .iconBox{
+    font-size: 2.5em;
+    color: #03a9f4;
+}
+
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    padding-top: 0;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.details .recentsActivities{
+    position: relative;
+    
+    min-height: 300px;
+    background: #fff;
+    padding: 20px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    font-weight: 600;
+}
+.btn  {
+    position: relative;
+    padding: 5px 10px;
+    background: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td{
+    font-weight: 600;
+}
+
+.details .recentsActivities tbody table tr:last-child {
+    border-bottom: none;
+}
+.details .recentsActivities table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details .recentsActivities table tbody tr:hover {
+    background: #03a9f4;
+    color: #fff;
+}
+.details .recentsActivities table tr td{
+    padding: 9px 5px;
+}
+.details .recentsActivities table tr td:last-child,
+.details .recentsActivities table tr td:last-child{
+    text-align: right;
+}
+.details .recentsActivities table tr td:nth-child(2),
+.details .recentsActivities table tr td:nth-child(2){
+    text-align: right;
+    padding: 20px;
+}
+
+.details .recentsActivities table tr td:nth-child(3),
+.details .recentsActivities table tr td:nth-child(3){
+    text-align: center;
+   
+}
+.status {
+    position: relative;
+    padding: 2px 4px;
+    background: #03a9f4;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.delivered {
+    background: green;
+    color: #fff;
+    border-radius: 18px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 2px 4px;
+}
+
+.details .recentsDoctors {
+    position: relative;
+    display: grid;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+
+.details .recentsDoctors .imgBx{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.details .recentsDoctors .imgBx img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.details .recentsDoctors table tr td h4 span{
+    font-size: 14px;
+    color: #999;
+}
+.details .recentsDoctors table tr:hover,
+.details .recentsDoctors table tr:hover td h4 span{
+    background: #03a9f4;
+    color: #fff;
+}
+
+.details .recentsDoctors table tr td{
+    padding: 7px 10px;
+}
+
+.details .recentsDoctors table tr td h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+/*making the template responsive*/
+
+@media (max-width: 992px) {
+    .navigation {
+        left: -300px;
+    }
+    .navigation.active{
+        left: 0;
+    }
+
+.main{
+    width: 100%;
+    left: 0;
+}
+.main.active{
+    width: calc(100% -300px);
+    left: 300px;
+
+}
+.cardBox{
+    grid-template-columns: repeat(2,1fr);
+    
+}
+}
+
+@media(max-width:768px){
+    .details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader{
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 480px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .details .recentsActivities{
+        overflow-x: auto;
+    }
+    .details .recentsActivities table {
+        width: 600px;
+    }
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigation.active {
+        width: 100%;
+        left: 0;
+    }
+    .toggle.active{
+        position: fixed;
+        z-index: 10000;
+        right: 0;
+        left: initial;
+    }
+    .toggle::before{
+        color: #fff;
+    }
+    .main, .main.active {
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
