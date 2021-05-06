@@ -30,16 +30,16 @@ const StyledTableRow = withStyles((theme: Theme) =>
   }),
 )(TableRow);
 
-function createData(name: string, email: string, phone: number, location: string, protein: number) {
-  return { name, email, phone, location, protein };
+function createData(name: string, calories: number, fat: number, carbs: number, protein: number) {
+  return { name, calories, fat, carbs, protein };
 }
 
 const rows = [
-  createData('Frozen yoghurt', 'gmail@gmail.com', 6.0, 'Kiambu', 4.0),
-  createData('Ice cream sandwic', 'gmail@gmail.com', 9.0, 'Kiambu', 4.3),
-  createData('Eclair', 'gmail@gmail.com', 16.0, 'Kiambu', 6.0),
-  createData('Cupcake', 'gmail@gmail.com', 3.7, 'Kiambu', 4.3),
-  createData('Gingerbread', 'gmail@gmail.com', 16.0, 'Kiambu', 3.9),
+  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
+  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
+  createData('Eclair', 262, 16.0, 24, 6.0),
+  createData('Cupcake', 305, 3.7, 67, 4.3),
+  createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
 const useStyles = makeStyles({
@@ -48,7 +48,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Appointments() {
+export default function PatientsMessage() {
   const classes = useStyles();
 
   return (
@@ -56,11 +56,11 @@ export default function Appointments() {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Patient</StyledTableCell>
-            <StyledTableCell align="right">Email</StyledTableCell>
-            <StyledTableCell align="right">Phone</StyledTableCell>
-            <StyledTableCell align="right">Location</StyledTableCell>
+            <StyledTableCell>Sender</StyledTableCell>
+            <StyledTableCell align="right">Reciever</StyledTableCell>
             <StyledTableCell align="right">Time</StyledTableCell>
+            <StyledTableCell align="right">Date</StyledTableCell>
+            <StyledTableCell align="right">Status</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -69,9 +69,9 @@ export default function Appointments() {
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              <StyledTableCell align="right">{row.email}</StyledTableCell>
-              <StyledTableCell align="right">{row.phone}</StyledTableCell>
-              <StyledTableCell align="right">{row.location}</StyledTableCell>
+              <StyledTableCell align="right">{row.calories}</StyledTableCell>
+              <StyledTableCell align="right">{row.fat}</StyledTableCell>
+              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
               <StyledTableCell align="right">{row.protein}</StyledTableCell>
             </StyledTableRow>
           ))}

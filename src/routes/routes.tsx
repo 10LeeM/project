@@ -19,10 +19,14 @@ import DoctorView from "../pages/guests/single/DoctorView";
 import ProductView from "../pages/guests/single/ProductView";
 import Cart from "../pages/guests/single/Cart";
 import Message from "../message/Message";
-import Messages from "../pages/patient/Messages";
+import Messages from "../pages/patient/PatientMessages";
 import Orders from "../pages/admin/Orders";
 import HistoryAdmin from "../pages/admin/HistoryAdmin";
 import MessagesAdmin from "../pages/admin/MessagesAdmin";
+import Appointments from "../pages/patient/Appointments";
+import PatientMessages from "../pages/patient/PatientMessages";
+import PatientsHistory from "../pages/patient/PatientsHistory";
+import PatientsOrders from "../pages/patient/PatientsOrders";
 
 const Routes = () => {
   return (
@@ -56,7 +60,10 @@ const Routes = () => {
         {/* client */}
         <DashRoute path={paths.doctors} component={Doctors} />
         <DashRoute path={paths.patient.vitals} component={Vitals} />
-        <DashRoute path={paths.common.messages} component={Messages} />
+        <DashRoute path={paths.patient.appointments} component={Appointments} />
+        <DashRoute path={paths.patient.messages} component={PatientMessages} />
+        <DashRoute path={paths.patient.history} component={PatientsHistory} />
+        <DashRoute path={paths.patient.orders} component={PatientsOrders} />
         {/* <DashRoute path={paths.} component={Products} /> */}
 
         <DashRoute path="*" component={NotFound} />

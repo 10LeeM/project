@@ -42,7 +42,7 @@ const patient: TLink[] = [
   },
   {
     icon: <Event />,
-    path: paths.common.appointments,
+    path: paths.patient.appointments,
     title: "Appointments",
   },
   {
@@ -105,7 +105,7 @@ const doctors: TLink[] = [
   },
   {
     icon: <Event />,
-    path: paths.common.appointments,
+    path: paths.patient.appointments,
     title: "Appointments",
   },
   {
@@ -116,12 +116,12 @@ const doctors: TLink[] = [
 
   {
     icon: <HistoryOutlined />,
-    path: paths.common.history,
+    path: paths.patient.history,
     title: "History",
   },
   {
     icon: <MessageOutlined />,
-    path: paths.common.history,
+    path: paths.patient.messages,
     title: "Messages",
   },
 ];

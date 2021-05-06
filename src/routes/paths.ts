@@ -14,7 +14,7 @@ const paths = {
   footer: "/footer",
 
   common: {
-    appointments: "/appointments",
+    // appointments: "/appointments",
     // ewallet: "/e-wallet",
     history: "/history",
     products: "/products",
@@ -24,6 +24,13 @@ const paths = {
   patient: {
     orders: "/orders",
     vitals: "/vitals",
+    appointments: "/appointments",
+    patientmessages: "/patientmessages",
+    patientshistory: "/patientshistory",
+    patientsorders: "/patientsorders",
+    history: "/history",
+    messages: "/messages",
+
   },
   doctor: {
     patients: "/patients",
