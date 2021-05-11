@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch } from "react-router";
-import Dummy from "../components/Dummy";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 import Index from "../pages/Index";
@@ -19,7 +18,7 @@ import DoctorView from "../pages/guests/single/DoctorView";
 import ProductView from "../pages/guests/single/ProductView";
 import Cart from "../pages/guests/single/Cart";
 import Message from "../message/Message";
-import Messages from "../pages/patient/PatientMessages";
+// import Messages from "../pages/patient/PatientMessages";
 import Orders from "../pages/admin/Orders";
 import HistoryAdmin from "../pages/admin/HistoryAdmin";
 import MessagesAdmin from "../pages/admin/MessagesAdmin";
@@ -27,6 +26,7 @@ import Appointments from "../pages/patient/Appointments";
 import PatientMessages from "../pages/patient/PatientMessages";
 import PatientsHistory from "../pages/patient/PatientsHistory";
 import PatientsOrders from "../pages/patient/PatientsOrders";
+import PatientProducts from "../pages/patient/PatientProducts";
 
 const Routes = () => {
   return (
@@ -43,7 +43,7 @@ const Routes = () => {
         <GuestRoute path={paths.productview} component={ProductView} exact />
         <GuestRoute path={paths.cart} component={Cart} exact />
         <GuestRoute path={paths.footer} component={Footer} exact />
-        <DashRoute path={paths.dashboard} component={Dummy} />
+        {/* <DashRoute path={paths.dashboard} component={Dummy} /> */}
 
         {/* Admin */}
         <DashRoute path={paths.admin.doctors} component={Doctors} />
@@ -64,7 +64,7 @@ const Routes = () => {
         <DashRoute path={paths.patient.messages} component={PatientMessages} />
         <DashRoute path={paths.patient.history} component={PatientsHistory} />
         <DashRoute path={paths.patient.orders} component={PatientsOrders} />
-        {/* <DashRoute path={paths.} component={Products} /> */}
+        <DashRoute path={paths.common.products} component={PatientProducts} />
 
         <DashRoute path="*" component={NotFound} />
       </Switch>

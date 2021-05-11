@@ -18,11 +18,16 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import MenuIcon from "@material-ui/icons/Menu";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { DashSideBar } from "../common/DashSidebar";
-import { AccountBalanceWallet, ExitToApp } from "@material-ui/icons";
-import { useDispatch } from "react-redux";
+import {
+  AccountBalanceWallet,
+  ExitToApp,
+  ShoppingBasket,
+} from "@material-ui/icons";
+import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/slices/userSlice";
 import { createMuiTheme } from "@material-ui/core/styles";
-import MessageIcon from '@material-ui/icons/Message';
+import MessageIcon from "@material-ui/icons/Message";
+import { cart } from "../../store/slices/cartSlice";
 
 const theme = createMuiTheme({
   palette: {
@@ -139,6 +144,8 @@ const DashboardLayout: FC = ({ children }) => {
     localStorage.clear();
   };
 
+  const cartProds = useSelector(cart);
+
   return (
     <div>
       <AppBar
@@ -179,13 +186,20 @@ const DashboardLayout: FC = ({ children }) => {
               </Badge>
             </IconButton>
             <IconButton color="inherit">
+              <Badge badgeContent={cartProds.length} color="secondary">
+                <ShoppingBasket />
+              </Badge>
+            </IconButton>
+            <IconButton color="inherit">
               <Badge badgeContent={2} color="secondary">
                 <AccountBalanceWallet />
               </Badge>
             </IconButton>
             <IconButton color="inherit">
               <Badge badgeContent={2} color="secondary">
-              <a href="/admin/message"  ><MessageIcon /> </a>
+                <a href="/admin/message">
+                  <MessageIcon />{" "}
+                </a>
               </Badge>
             </IconButton>
             <IconButton color="inherit" onClick={logoutUser}>

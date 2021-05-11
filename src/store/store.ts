@@ -1,11 +1,13 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import loadingreducer from "./slices/loadingSlice";
-import userReducer from "./slices/userSlice";
+import loader from "./slices/loadingSlice";
+import cart from "./slices/cartSlice";
+import user from "./slices/userSlice";
 
 export const store = configureStore({
   reducer: {
-    user: userReducer,
-    loader: loadingreducer,
+    user,
+    loader,
+    cart
   },
 });
 

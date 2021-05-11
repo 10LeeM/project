@@ -9,6 +9,7 @@ interface IProduct {
   quantity: string;
   effects: string;
   pharmacyId: string;
+  num: number
 }
 
 interface IOrder {

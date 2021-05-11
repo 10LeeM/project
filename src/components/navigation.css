@@ -1,11 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -14,7 +13,6 @@ body {
   padding: 5px;
   padding-right: 40px;
   padding-left: 70px;
-
 }
 
 nav {
@@ -26,7 +24,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   margin-right: 20px;
   padding: 20px;
@@ -37,7 +35,7 @@ a {
   text-decoration: none;
   color: #555;
 }
-p{
+p {
   color: #555;
 }
 
@@ -69,9 +67,7 @@ p{
 }
 
 .col-2 p {
- 
   line-height: 30px;
-
 }
 
 .btn {
@@ -101,7 +97,7 @@ p{
   display: none;
 }
 
-.checkout{
+.checkout {
   color: chocolate;
 }
 
@@ -112,13 +108,13 @@ p{
     position: absolute;
     top: 70px;
     left: 0;
-    background: #EAEFF4;
+    background: #eaeff4;
     width: 100%;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin-right: 20px;
-    
+
     text-align: right;
   }
   .menu-icon {

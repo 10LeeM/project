@@ -26,7 +26,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import FilterListIcon from "@material-ui/icons/FilterList";
 import { useQuery } from "react-query";
 import { sendReq } from "../../api/api";
-import { useLoading } from "../../utils/hooks";
+// import { useLoading } from "../../utils/hooks";
 import { Add, Edit } from "@material-ui/icons";
 import { IProduct } from "../../models/product";
 import CreateProduct from "./products/CreateProduct";
@@ -123,11 +123,10 @@ function EnhancedTableHead(props: EnhancedTableProps) {
     rowCount,
     onRequestSort,
   } = props;
-  const createSortHandler = (property: keyof IProduct) => (
-    event: React.MouseEvent<unknown>
-  ) => {
-    onRequestSort(event, property);
-  };
+  const createSortHandler =
+    (property: keyof IProduct) => (event: React.MouseEvent<unknown>) => {
+      onRequestSort(event, property);
+    };
 
   return (
     <TableHead>
@@ -346,8 +345,8 @@ export default function EnhancedTable() {
   const emptyRows =
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
-  const { isLoading } = useQuery(
-    "Get doctors",
+  useQuery(
+    "Get products",
     async () =>
       await sendReq<IProduct[]>({
         endpoint: "/pharmacy-products",
