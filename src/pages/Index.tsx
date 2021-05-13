@@ -15,7 +15,7 @@ const Home = () => {
               allows for doctors to effectively manage how they offer services. </p>
               <div className="home-btn">
             <a href="/" className="btn"><i className="fa fa-android" />Download App</a>
-            <a href="/register" className="btn2"><i className="fa fa-calendar" />Book</a>
+            <a href="/register" className="btn2"><i className="fa fa-calendar" />Book Doctor</a>
             </div>
           </div>
           <div className="col-2">

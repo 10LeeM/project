@@ -2,6 +2,7 @@ import React from "react";
 import Appdoctor from "./Appdoctor";
 import Featureddoctors from "./Featureddoctors";
 import "./mission.css";
+import DoctorServices from "./DoctorServices";
 
 const Mission = () => {
   return (
@@ -23,11 +24,13 @@ const Mission = () => {
           <br />
          get treatment whether they can pay or not.
         </p>
-        <a href="/" className="btn"><i className="fa fa-android" />Download App</a>
+        <a href="/about" className="btn"><i className="fa fa-android" />Learn More</a>
       </div>
       <div className="mission__image">
         <img src="/image/mission.jpg" alt="my hospital" />
       </div>
+
+      <DoctorServices/>
       <Appdoctor/>
     
         <Featureddoctors/>

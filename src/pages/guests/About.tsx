@@ -58,12 +58,16 @@ const About = () => {
           with Ohospital secure cloud based platform <br /> built to allow doctors to fast to 
            manage, offer services and follow up with patients.  
          </p>
+
+         <a href="/register" className="btn"><i className="fa fa-calendar" />Book Trail</a>
   
        </div>
  
        <div className="mission__image">
          <img src="/image/mission.jpg" alt="my hospital" />
        </div>
+
+       
        
      </div>
 
