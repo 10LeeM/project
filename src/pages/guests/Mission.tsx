@@ -1,4 +1,5 @@
 import React from "react";
+import Appdoctor from "./Appdoctor";
 import Featureddoctors from "./Featureddoctors";
 import "./mission.css";
 
@@ -27,6 +28,7 @@ const Mission = () => {
       <div className="mission__image">
         <img src="/image/mission.jpg" alt="my hospital" />
       </div>
+      <Appdoctor/>
     
         <Featureddoctors/>
      

@@ -16,9 +16,10 @@ const Appdoctor = () => {
         <div className="col-app">
           <p>Are you looking to manage your patients effectively?</p>
           <h1>Doctor's App</h1>
-          <small>Our app help doctors to effectively manage their patients, 
+          <small>Our platfrom help doctors to effectively manage their patients, 
             providing the option for virtual visits, online chatting, invite other doctors for assistance and prescription management. </small>
         </div>
+        
       </div>
     </div>
   </div>

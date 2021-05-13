@@ -46,14 +46,14 @@ const Register = () => {
 
   return (
     <div>
-      <div className="account-page">
-        <div className="container">
+      <div className="account-pag">
+        <div className="contained">
           <div className="row">
             <div className="col-2">
               <img src="image/home.png" width="100%" alt="" />
             </div>
             <div className="col-2">
-              <div className="form-container">
+              <div className="form-contained">
                 <div className="form-btn">
                   <span>Register</span>
                 </div>

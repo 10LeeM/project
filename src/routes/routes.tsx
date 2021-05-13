@@ -27,6 +27,7 @@ import PatientMessages from "../pages/patient/PatientMessages";
 import PatientsHistory from "../pages/patient/PatientsHistory";
 import PatientsOrders from "../pages/patient/PatientsOrders";
 import PatientProducts from "../pages/patient/PatientProducts";
+import About from "../pages/guests/About";
 
 const Routes = () => {
   return (
@@ -36,6 +37,7 @@ const Routes = () => {
         <GuestRoute path={paths.index} component={Index} exact />
         <GuestRoute path={paths.login} component={Login} exact />
         <GuestRoute path={paths.register} component={Register} exact />
+        <GuestRoute path={paths.about} component={About} exact />
 
         <GuestRoute path={paths.doctorshome} component={Doctorshome} exact />
         <GuestRoute path={paths.pharmacyhome} component={Pharmacyhome} exact />

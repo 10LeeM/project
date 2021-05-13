@@ -25,11 +25,13 @@ const Footer = () => {
         <div className="footer-col-3">
           <h3>Useful Link</h3>
           <ul>
-            <li><i className="fa fa-user"></i>Doctors</li>
-            <li><i className="fa fa-ambulance"></i>Pharmacy</li>
-            <li><i className="fa fa-android"></i>App</li>
-            <li><i className="fa fa-lock"></i>Terms & Conditions</li>
-            <li><i className="fa fa-share"></i>Invite Friends</li>
+          <a href="/doctorshome"><li><i className="fa fa-user"></i>Doctors</li></a>
+          <a href="/pharmacyhome"><li><i className="fa fa-user"></i>Pharmacy</li></a>
+            <a href="/about"><li><i className="fa fa-user"></i>About</li></a>
+            <a href="/about"><li><i className="fa fa-user"></i>Record Policy</li></a>
+            <a href="/about"><li><i className="fa fa-user"></i>Privacy Policy</li></a>
+            <a href="/about"><li><i className="fa fa-user"></i>Terms & Conditions</li></a>
+           
           </ul>
         </div>
         <div className="footer-col-4">

@@ -19,19 +19,19 @@ const Navbar = () => {
           <ul id="MenuItems">
             <li>
               {" "}
-              <Link to="/">Home</Link>
+              <Link to="/">HOME</Link>
             </li>
             <li>
               {" "}
-              <Link to={paths.doctorshome}>Doctors</Link>
+              <Link to={paths.doctorshome}>DOCTORS</Link>
             </li>
             <li>
               {" "}
-              <Link to={paths.pharmacyhome}>Pharmacy</Link>
+              <Link to={paths.pharmacyhome}>PHARMACY</Link>
             </li>
             <li>
               {" "}
-              <Link to={paths.login}>Account</Link>
+              <Link to={paths.login}>ACCOUNT</Link>
             </li>
           </ul>
         </nav>

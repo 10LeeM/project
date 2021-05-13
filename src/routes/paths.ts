@@ -9,7 +9,7 @@ const paths = {
   pharmacyhome: "/pharmacyhome",
   doctorview: "/doctorview",
   cart: "/cart",
-
+  about: "/about",
   productview: "/productview",
   footer: "/footer",
 
