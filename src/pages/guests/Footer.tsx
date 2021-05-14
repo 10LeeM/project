@@ -28,9 +28,9 @@ const Footer = () => {
           <a href="/doctorshome"><li><i className="fa fa-user"></i>Doctors</li></a>
           <a href="/pharmacyhome"><li><i className="fa fa-user"></i>Pharmacy</li></a>
             <a href="/about"><li><i className="fa fa-user"></i>About</li></a>
-            <a href="/about"><li><i className="fa fa-user"></i>Record Policy</li></a>
-            <a href="/about"><li><i className="fa fa-user"></i>Privacy Policy</li></a>
-            <a href="/about"><li><i className="fa fa-user"></i>Terms & Conditions</li></a>
+            <a href="/recordpolicy"><li><i className="fa fa-user"></i>Record Policy</li></a>
+            <a href="/privacypolicy"><li><i className="fa fa-user"></i>Privacy Policy</li></a>
+            <a href="/termscondition"><li><i className="fa fa-user"></i>Terms & Conditions</li></a>
            
           </ul>
         </div>
