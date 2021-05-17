@@ -65,7 +65,7 @@ const Routes = () => {
         <DashRoute path={paths.patient.history} component={PatientsHistory} />
         <DashRoute path={paths.patient.orders} component={PatientsOrders} />
         <DashRoute path={paths.common.products} component={PatientProducts} />
-
+        <DashRoute path={paths.common.cart} component={Cart} exact />
         <DashRoute path="*" component={NotFound} />
       </Switch>
     </>

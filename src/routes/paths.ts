@@ -2,10 +2,10 @@ const paths = {
   index: "/",
   doctors: "/doctors",
   login: "/login",
-  
+
   register: "/register",
   dashboard: "/dashboard",
-  doctorshome:"/doctorshome",
+  doctorshome: "/doctorshome",
   pharmacyhome: "/pharmacyhome",
   doctorview: "/doctorview",
   cart: "/cart",
@@ -19,7 +19,7 @@ const paths = {
     history: "/history",
     products: "/products",
     messages: "/messages",
-  
+    cart: "/shopping-cart",
   },
   patient: {
     orders: "/orders",
@@ -30,7 +30,6 @@ const paths = {
     patientsorders: "/patientsorders",
     history: "/history",
     messages: "/messages",
-
   },
   doctor: {
     patients: "/patients",

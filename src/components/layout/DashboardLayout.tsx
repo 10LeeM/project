@@ -27,7 +27,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/slices/userSlice";
 import { createMuiTheme } from "@material-ui/core/styles";
 import MessageIcon from "@material-ui/icons/Message";
-import { cart } from "../../store/slices/cartSlice";
+import { getCart } from "../../store/slices/cartSlice";
+import paths from "../../routes/paths";
+import { useHistory } from "react-router";
 
 const theme = createMuiTheme({
   palette: {
@@ -138,13 +140,14 @@ const DashboardLayout: FC = ({ children }) => {
     setOpen(false);
   };
   // const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+  const h = useHistory();
 
   const logoutUser = () => {
     dispatch(logout());
     localStorage.clear();
   };
 
-  const cartProds = useSelector(cart);
+  const cart = useSelector(getCart);
 
   return (
     <div>
@@ -185,8 +188,11 @@ const DashboardLayout: FC = ({ children }) => {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <IconButton color="inherit">
-              <Badge badgeContent={cartProds.length} color="secondary">
+            <IconButton
+              color="inherit"
+              onClick={() => h.push(paths.common.cart)}
+            >
+              <Badge badgeContent={cart.length} color="secondary">
                 <ShoppingBasket />
               </Badge>
             </IconButton>
