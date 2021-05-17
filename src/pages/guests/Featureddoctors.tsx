@@ -53,7 +53,8 @@ const Featureddoctors = () => {
           <a href ="/" className="btn">Consult</a>
         </div>
       </div>
-    </div>      
+    </div>    
+    <a href="/register" className="btn"><i className="fa fa-arrow-right" />View All Doctors</a>  
   </div>
 
   </div>

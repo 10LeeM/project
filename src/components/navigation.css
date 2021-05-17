@@ -122,3 +122,34 @@ p {
     cursor: pointer;
   }
 }
+
+
+.btn2 {
+  display: inline-block;
+  background: #00cce4;
+  color: #fff;
+  padding: 10px 30px;
+
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn2:hover {
+  background: chocolate;
+}
+
+.btn2 i:hover {
+  background: chocolate;
+}
+
+.btn i:hover {
+  background: chocolate;
+}
+
+.btn2 i {
+  color: #fff;
+  padding: 5px;
+  letter-spacing: 5px;
+  background: #00cce4;
+}

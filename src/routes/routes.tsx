@@ -27,6 +27,11 @@ import PatientMessages from "../pages/patient/PatientMessages";
 import PatientsHistory from "../pages/patient/PatientsHistory";
 import PatientsOrders from "../pages/patient/PatientsOrders";
 import PatientProducts from "../pages/patient/PatientProducts";
+import About from "../pages/guests/About";
+import RecordPolicy from "../pages/guests/RecordPolicy";
+import PrivacyPolicy from "../pages/guests/PrivacyPolicy";
+import TermsCondition from "../pages/guests/TermsCondition";
+import CookiesPolicy from "../pages/guests/CookiesPolicy";
 
 const Routes = () => {
   return (
@@ -36,7 +41,11 @@ const Routes = () => {
         <GuestRoute path={paths.index} component={Index} exact />
         <GuestRoute path={paths.login} component={Login} exact />
         <GuestRoute path={paths.register} component={Register} exact />
-
+        <GuestRoute path={paths.about} component={About} exact />
+        <GuestRoute path={paths.recordpolicy} component={RecordPolicy} exact />
+        <GuestRoute path={paths.privacypolicy} component={PrivacyPolicy} exact />
+        <GuestRoute path={paths.termscondition} component={TermsCondition} exact />
+        <GuestRoute path={paths.cookiespolicy} component={CookiesPolicy} exact />
         <GuestRoute path={paths.doctorshome} component={Doctorshome} exact />
         <GuestRoute path={paths.pharmacyhome} component={Pharmacyhome} exact />
         <GuestRoute path={paths.doctorview} component={DoctorView} exact />

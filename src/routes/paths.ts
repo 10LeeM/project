@@ -9,7 +9,11 @@ const paths = {
   pharmacyhome: "/pharmacyhome",
   doctorview: "/doctorview",
   cart: "/cart",
-
+  about: "/about",
+  recordpolicy: "/recordpolicy",
+  privacypolicy: "/privacypolicy",
+  termscondition: "/termscondition",
+  cookiespolicy: "/cookiespolicy",
   productview: "/productview",
   footer: "/footer",
 
