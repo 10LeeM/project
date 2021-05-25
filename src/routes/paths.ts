@@ -14,7 +14,7 @@ const paths = {
   privacypolicy: "/privacypolicy",
   termscondition: "/termscondition",
   cookiespolicy: "/cookiespolicy",
-  productview: "/productview",
+  productview: "/product/:id",
   footer: "/footer",
 
   common: {
@@ -22,6 +22,7 @@ const paths = {
     // ewallet: "/e-wallet",
     history: "/history",
     products: "/products",
+    product: "/products/:id",
     messages: "/messages",
     cart: "/shopping-cart",
   },
