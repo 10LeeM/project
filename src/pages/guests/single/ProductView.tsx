@@ -29,16 +29,6 @@ const ProductView = () => {
     }
   );
 
-<<<<<<< HEAD
-    return (
-        <div>
-       
-        <div className="small-container single-doctor">
-        
-          <div className="row">
-            <div className="col-2">
-              <img src="image/home.jpg" width="100%" alt="" />             
-=======
   return (
     <div>
       {isLoading && <AppLoader />}
@@ -58,7 +48,6 @@ const ProductView = () => {
                   <img src="/image/home.jpg" width="100%" alt="" />
                 </div>
               </div>
->>>>>>> 15176c52d1f36ad50aa5d04700662f55917570a8
             </div>
           </div>
           <div className="col-2">
