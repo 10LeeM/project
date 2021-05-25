@@ -47,7 +47,7 @@ const patient: TLink[] = [
   },
   {
     icon: <ShoppingBasket />,
-    path: paths.common.products,
+    path: paths.patient.productspatients,
     title: "Products",
   },
   {

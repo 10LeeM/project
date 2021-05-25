@@ -14,21 +14,7 @@ const ProductView = () => {
         
           <div className="row">
             <div className="col-2">
-              <img src="image/home.jpg" width="100%" alt="" />
-              <div className="col2">
-              <div className="small-img-row2">
-                  <div className="small-img-col2">
-                  <img src="image/home.jpg" width="100%" alt="" />
-                  </div>
-                  <div className="small-img-col2">
-                  <img src="image/home.jpg" width="100%" alt="" />
-                  </div>
-                  <div className="small-img-col2">
-                  <img src="image/home.jpg" width="100%" alt="" />
-                  </div>
-                  </div>
-              </div>
-             
+              <img src="image/home.jpg" width="100%" alt="" />             
             </div>
             <div className="col-2">
               

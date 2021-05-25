@@ -32,6 +32,7 @@ import RecordPolicy from "../pages/guests/RecordPolicy";
 import PrivacyPolicy from "../pages/guests/PrivacyPolicy";
 import TermsCondition from "../pages/guests/TermsCondition";
 import CookiesPolicy from "../pages/guests/CookiesPolicy";
+import ProductsPatients from "../pages/patient/ProductsPatients";
 
 const Routes = () => {
   return (
@@ -74,6 +75,7 @@ const Routes = () => {
         <DashRoute path={paths.patient.history} component={PatientsHistory} />
         <DashRoute path={paths.patient.orders} component={PatientsOrders} />
         <DashRoute path={paths.common.products} component={PatientProducts} />
+        <DashRoute path={paths.patient.productspatients} component={ProductsPatients} />
         <DashRoute path={paths.common.cart} component={Cart} exact />
         <DashRoute path="*" component={NotFound} />
       </Switch>

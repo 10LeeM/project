@@ -34,6 +34,7 @@ const paths = {
     patientsorders: "/patientsorders",
     history: "/history",
     messages: "/messages",
+    productspatients: "/productspatients",
   },
   doctor: {
     patients: "/patients",
