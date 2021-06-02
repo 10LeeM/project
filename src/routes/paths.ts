@@ -16,6 +16,7 @@ const paths = {
   cookiespolicy: "/cookiespolicy",
   productview: "/product/:id",
   footer: "/footer",
+  checkout: "/checkout",
 
   common: {
     // appointments: "/appointments",
@@ -36,6 +37,7 @@ const paths = {
     history: "/history",
     messages: "/messages",
     productspatients: "/productspatients",
+    checkout: "/patientcheckout",
   },
   doctor: {
     patients: "/patients",

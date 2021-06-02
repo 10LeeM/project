@@ -1,10 +1,14 @@
+import { Badge } from "@material-ui/core";
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import paths from "../routes/paths";
+import { getCart } from "../store/slices/cartSlice";
 import "./navigation.css";
 
 const Navbar = () => {
   // const [open, setOpen] = useState(false);
+  const cart = useSelector(getCart);
 
   return (
     <div>
@@ -35,7 +39,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <a href="/cart">
+        <Link to={paths.cart}>
           <img
             src="image/cart.png"
             width="30px"
@@ -43,7 +47,8 @@ const Navbar = () => {
             className="checkout"
             alt=""
           />
-        </a>
+          {cart.length && <Badge badgeContent={cart.length} />}
+        </Link>
         <img src="image/menu.png" className="menu-icon" alt="" />
       </div>
     </div>

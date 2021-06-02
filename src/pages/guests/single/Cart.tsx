@@ -1,10 +1,21 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getCart, remove, setQuantity } from "../../../store/slices/cartSlice";
+import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
+import paths from "../../../routes/paths";
+import {
+  getCart,
+  getTotal,
+  remove,
+  setQuantity,
+} from "../../../store/slices/cartSlice";
 import "./cart.css";
 
 const Cart = () => {
   const cart = useSelector(getCart);
+  const total = useSelector(getTotal);
+  let tax = 100;
+  const { pathname } = useLocation();
   const dispatch = useDispatch();
 
   return (
@@ -63,21 +74,24 @@ const Cart = () => {
         <table>
           <tr>
             <td>Subtotal</td>
-            <td>100</td>
+            <td>{total}</td>
           </tr>
           <tr>
             <td>Tax</td>
-            <td>100</td>
+            <td>{tax}</td>
           </tr>
           <tr>
             <td>Total</td>
-            <td>100</td>
+            <td>{total + tax}</td>
           </tr>
         </table>
       </div>
-      <a href="/" className="btn">
+      <Link
+        to={pathname === paths.cart ? paths.checkout : paths.patient.checkout}
+        className="btn"
+      >
         Checkout
-      </a>
+      </Link>
     </div>
   );
 };

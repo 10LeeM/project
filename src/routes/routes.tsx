@@ -33,6 +33,8 @@ import PrivacyPolicy from "../pages/guests/PrivacyPolicy";
 import TermsCondition from "../pages/guests/TermsCondition";
 import CookiesPolicy from "../pages/guests/CookiesPolicy";
 import ProductsPatients from "../pages/patient/ProductsPatients";
+import Checkout from "../pages/guests/display/Checkout";
+// import PatientProducts from "../pages/patient/PatientProducts";
 
 const Routes = () => {
   return (
@@ -44,14 +46,27 @@ const Routes = () => {
         <GuestRoute path={paths.register} component={Register} exact />
         <GuestRoute path={paths.about} component={About} exact />
         <GuestRoute path={paths.recordpolicy} component={RecordPolicy} exact />
-        <GuestRoute path={paths.privacypolicy} component={PrivacyPolicy} exact />
-        <GuestRoute path={paths.termscondition} component={TermsCondition} exact />
-        <GuestRoute path={paths.cookiespolicy} component={CookiesPolicy} exact />
+        <GuestRoute
+          path={paths.privacypolicy}
+          component={PrivacyPolicy}
+          exact
+        />
+        <GuestRoute
+          path={paths.termscondition}
+          component={TermsCondition}
+          exact
+        />
+        <GuestRoute
+          path={paths.cookiespolicy}
+          component={CookiesPolicy}
+          exact
+        />
         <GuestRoute path={paths.doctorshome} component={Doctorshome} exact />
         <GuestRoute path={paths.pharmacyhome} component={Pharmacyhome} exact />
         <GuestRoute path={paths.doctorview} component={DoctorView} exact />
         <GuestRoute path={paths.productview} component={ProductView} exact />
         <GuestRoute path={paths.cart} component={Cart} exact />
+        <GuestRoute path={paths.checkout} component={Checkout} exact />
         <GuestRoute path={paths.footer} component={Footer} exact />
         {/* <DashRoute path={paths.dashboard} component={Dummy} /> */}
 
@@ -74,8 +89,12 @@ const Routes = () => {
         <DashRoute path={paths.patient.messages} component={PatientMessages} />
         <DashRoute path={paths.patient.history} component={PatientsHistory} />
         <DashRoute path={paths.patient.orders} component={PatientsOrders} />
+        <DashRoute path={paths.patient.checkout} component={Checkout} />
         <DashRoute path={paths.common.products} component={PatientProducts} />
-        <DashRoute path={paths.patient.productspatients} component={ProductsPatients} />
+        <DashRoute
+          path={paths.patient.productspatients}
+          component={PatientProducts}
+        />
         <DashRoute path={paths.common.cart} component={Cart} exact />
         <DashRoute path="*" component={NotFound} />
       </Switch>

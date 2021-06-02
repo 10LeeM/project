@@ -72,4 +72,10 @@ export const cartSlice = createSlice({
 
 export const { addToCart, remove, setQuantity } = cartSlice.actions;
 export const getCart = (state: RootState) => state.cart.cart;
+export const getTotal = (state: RootState) => {
+  return state.cart.cart.reduce(
+    (sum, el) => sum + parseFloat(el.currentPrice),
+    0
+  );
+};
 export default cartSlice.reducer;
