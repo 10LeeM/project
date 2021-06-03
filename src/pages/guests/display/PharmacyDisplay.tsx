@@ -32,7 +32,7 @@ const PharmacyDisplay = () => {
   return (
     <div>
       <div className="product">
-        <div className="small-container">
+        <div className="small-container" >
           <Search />
           <div className="row">
             {products.map((product) => {

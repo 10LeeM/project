@@ -22,6 +22,39 @@ table {
     width: 80px;
     margin-right: 40px;
 }
+.cart-page th{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cart-info i{
+    color: red;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.total-price td{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.toinput input{
+    border-width: 3px;
+    border-color: #00cce4;
+}
+
+.currentprice {
+    font-weight: bold;
+}
+
+.cart-info span{
+    color: grey;
+    font-size: 20px;
+}
+.cart-info small{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
 
 th{
     text-align: left;
@@ -74,4 +107,9 @@ th:last-child{
 .cart-page-btn{
    color: #00cce4;
   text-align: right;
+}
+
+.product-name{
+    font-size: 20px;
+    font-weight: bold;
 }

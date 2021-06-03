@@ -34,7 +34,7 @@ const ProductView = () => {
       {isLoading && <AppLoader />}
       {product && (
         <div className="row">
-          <div className="col-2">
+          <div className="col-2" >
             <img src="/image/home.jpg" width="100%" alt="" />
             <div className="col2">
               <div className="small-img-row2">
@@ -51,11 +51,11 @@ const ProductView = () => {
             </div>
           </div>
           <div className="col-2">
-            <h4>{product.name}</h4>
-            <h3>Painkiller</h3>
+            <h2>{product.name}</h2>
+            <h3>Category</h3>
             <h4>{product.currentPrice}/=</h4>
 
-            <div>
+            <div className="cart">
               <input type="number" defaultValue={1} />
               <span
                 onClick={() => dispatch(addToCart(product))}
@@ -72,9 +72,9 @@ const ProductView = () => {
               I specify on consultancy with outstanding result. I enjoy solving
               health challenges and see a health nation.
             </p>
-
+            
             <h3>
-              Dosage <i className="fa fa-capsules"></i>
+              Dosage <i className="fa fa-stethoscope"></i>
             </h3>
             <hr />
             <p>

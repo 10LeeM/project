@@ -36,8 +36,8 @@ const Cart = () => {
                   <div className="cart-info">
                     <img src="image/home.jpg" alt="" />
                     <div>
-                      <div>{prod.name}</div>
-                      <small>Price: {prod.currentPrice}</small>
+                      <div className="product-name">{prod.name}</div>
+                      <small>Price: {prod.currentPrice}</small >
                       <br />
 
                       <span
@@ -50,7 +50,7 @@ const Cart = () => {
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className="toinput">
                   <input
                     type="number"
                     onChange={(e) => {
@@ -63,7 +63,7 @@ const Cart = () => {
                     value={prod.num}
                   />
                 </td>
-                <td>{prod.num * parseFloat(prod.currentPrice)}</td>
+                <td className="currentprice">{prod.num * parseFloat(prod.currentPrice)}</td>
               </tr>
             );
           })}

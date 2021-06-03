@@ -39,7 +39,8 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <Link to={paths.cart}>
+        <Link to={paths.cart} >
+      
           <img
             src="image/cart.png"
             width="30px"

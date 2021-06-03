@@ -25,8 +25,10 @@
     font-weight: bold;
 }
 
-.single-doctor i{
+.col-2 i{
     color: #00cce4;
+    padding-left: 10px;
+  
 }
 
 .single-doctor p{
@@ -48,9 +50,41 @@
    padding-top: 10px;
 }
 
+.col-2{
+    padding-right: 20px;
+}
 
 .small-img-col2 img{
    flex-basis: 24%;
    cursor: pointer;
+   height: 200px;
+   width: 200px;
+}
+.cart input{
+    padding-right: 10px;
+    border: #00cce4 1px solid;
+    border-radius: 5px;
+    border-width: 2px;
+    height: 35px;
+}
+.cart span{
+    margin-left: 8px;
 }
 
+.col-2 h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.col-2 h4{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.col-2 h3{
+    font-size: 20px;
+    font-weight: 2px;
+    color: gray;
+padding-top: 10px;
+}
