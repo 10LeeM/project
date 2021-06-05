@@ -35,7 +35,8 @@
     text-transform: capitalize;
  } 
  .hero .roow .left-sec h2 span{ 
-    color: #00cce4;
+    color: red;
+    font-weight: bold;
  } 
  .hero .roow .left-sec p{ 
     margin: 20px 0;
@@ -53,8 +54,8 @@
     cursor: pointer;
     margin-top: 30px;
     padding: 0 25px;
-    border: 3px solid #00cce4;
-    background-color: #00cce4;
+    border: 3px solid red;
+    background-color: red;
     box-shadow: 5px 7px 20px #000;
  } 
  .hero .roow .left-sec .discover-button a{ 

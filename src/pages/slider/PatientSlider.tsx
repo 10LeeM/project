@@ -12,7 +12,7 @@ const PatientSlider = () => {
                       <p>Happiness is not in money, but in health. Always with your Doctor</p>
               </div>
               <button className="discover-button">
-                  <a href="/doctorshome">Discover</a><span><i className="fa fa-arrow-circle-o-right"></i></span>
+                  <a href="/doctorshome">Redeem Coupon</a><span><i className="fa fa-arrow-circle-o-right"></i></span>
               </button>
               <div className="information">
               <div className="doctor-profile">
@@ -20,7 +20,7 @@ const PatientSlider = () => {
                   <h2>Price</h2>
               </div>
               <div className="doctor-profile">
-                  <p>Pain Killer</p>
+                  <p>Diabetes</p>
                   <h2>500/=</h2>
               </div>
               </div>
@@ -29,7 +29,7 @@ const PatientSlider = () => {
 
           <div className="right-sec">
               <div className="doctors">
-                  <div><img src="doctors/clif.jpg" alt=""/></div>
+                  <div><img src="doctors/met.jpg" alt=""/></div>
                   
               </div>
           </div>
