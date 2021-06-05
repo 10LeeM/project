@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../store/slices/cartSlice";
 import { Link } from "react-router-dom";
 import paths from "../../../routes/paths";
+import PatientSlider from "../../slider/PatientSlider";
 
 const PharmacyDisplay = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -31,6 +32,7 @@ const PharmacyDisplay = () => {
 
   return (
     <div>
+      <PatientSlider/>
       <div className="product">
         <div className="small-container" >
           <Search />

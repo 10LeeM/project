@@ -1,5 +1,6 @@
 
 import React from "react";
+import DoctorSlider from "../../slider/DoctorSlider";
 import "./display.css";
 import Pagination from "./Pagination";
 import Search from "./Search";
@@ -10,6 +11,7 @@ const DoctorsDisplay = () => {
 
   return (
     <div>
+      <DoctorSlider/>
     <div className="doctors">
     <div className="small-container">
     <Search/>
