@@ -33,6 +33,14 @@ const Navbar = () => {
               {" "}
               <Link to={paths.pharmacyhome}>PHARMACY</Link>
             </li>
+
+            <li>
+              {" "}
+              <Link to={paths.medkit}>MEDKIT</Link>
+            </li>
+
+
+
             <li>
               {" "}
               <Link to={paths.login}>ACCOUNT</Link>

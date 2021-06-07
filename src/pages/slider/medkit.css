@@ -1,0 +1,87 @@
+.medkit{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex: 20%;
+    padding: 10px;
+    max-width: 280px;
+    box-sizing: border-box;
+}
+.table{
+    background: #00cce4;
+    padding: 30px 8px;
+position: relative;
+overflow: hidden;
+box-shadow: 0 0 10px gray;
+}
+.table h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.table ul{
+    margin: 0;
+    padding: 0;
+}
+.table ul li{
+    padding: 3px 0;
+    list-style: none;
+}
+
+.price{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.price span {
+    display: block;
+    font-size: 14px;
+}
+
+.table a{
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #2c3e50;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    transition: 0.5s linear;
+}
+
+.table a:hover{
+    background: #fff;
+    color: #00cce4;
+}
+
+.bannerr{
+    background: #333;
+    color: #fff;
+    transform: rotate(45deg);
+    padding: 10px 30px;
+    position: absolute;
+    top: 6px;
+    right: -30px;
+}
+
+@media screen and (max-width:980px){
+    .col{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .col{
+        flex: 100%;
+    }
+}

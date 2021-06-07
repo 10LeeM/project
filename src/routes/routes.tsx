@@ -32,8 +32,9 @@ import RecordPolicy from "../pages/guests/RecordPolicy";
 import PrivacyPolicy from "../pages/guests/PrivacyPolicy";
 import TermsCondition from "../pages/guests/TermsCondition";
 import CookiesPolicy from "../pages/guests/CookiesPolicy";
-import ProductsPatients from "../pages/patient/ProductsPatients";
+
 import Checkout from "../pages/guests/display/Checkout";
+import Medkit from "../pages/slider/Medkit";
 // import PatientProducts from "../pages/patient/PatientProducts";
 
 const Routes = () => {
@@ -44,6 +45,7 @@ const Routes = () => {
         <GuestRoute path={paths.index} component={Index} exact />
         <GuestRoute path={paths.login} component={Login} exact />
         <GuestRoute path={paths.register} component={Register} exact />
+        <GuestRoute path={paths.medkit} component={Medkit} exact />
         <GuestRoute path={paths.about} component={About} exact />
         <GuestRoute path={paths.recordpolicy} component={RecordPolicy} exact />
         <GuestRoute

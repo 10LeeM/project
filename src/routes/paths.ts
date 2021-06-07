@@ -2,7 +2,7 @@ const paths = {
   index: "/",
   doctors: "/doctors",
   login: "/login",
-
+  medkit: "/medkit",
   register: "/register",
   dashboard: "/dashboard",
   doctorshome: "/doctorshome",
