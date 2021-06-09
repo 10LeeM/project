@@ -12,7 +12,7 @@ const PatientSlider = () => {
                       <p>Happiness is not in money, but in health. Always with your Doctor</p>
               </div>
               <button className="discover-button">
-                  <a href="/doctorshome">Redeem Coupon</a><span><i className="fa fa-arrow-circle-o-right"></i></span>
+                  <a href="/login">Redeem Coupon</a><span><i className="fa fa-arrow-circle-o-right"></i></span>
               </button>
               <div className="information">
               <div className="doctor-profile">

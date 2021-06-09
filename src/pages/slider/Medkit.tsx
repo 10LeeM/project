@@ -18,7 +18,9 @@ const Medkit = () => {
   return <>
   <div>
     <MedkitSlider images={[image1 , image2, image3]}/>
+    <div className="header"><h1>Our Medical Kit</h1></div> 
     <div className="medkit">
+    
       <div className="col">
       <div className="table">
         <h2>BASIC</h2>

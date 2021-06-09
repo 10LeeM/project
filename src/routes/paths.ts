@@ -4,7 +4,7 @@ const paths = {
   login: "/login",
   medkit: "/medkit",
   register: "/register",
-  dashboard: "/dashboard",
+ 
   doctorshome: "/doctorshome",
   pharmacyhome: "/pharmacyhome",
   doctorview: "/doctorview",
@@ -21,6 +21,7 @@ const paths = {
   common: {
     // appointments: "/appointments",
     // ewallet: "/e-wallet",
+    dashboard: "/dashboard",
     history: "/history",
     products: "/products",
     product: "/products/:id",
@@ -50,6 +51,7 @@ const paths = {
     history: "/admin/history",
     messages: "/admin/messages",
     message: "/admin/message",
+    medkit: "/admin/medkit",
     // ewallet: "/admin/ewallet",
   },
 };

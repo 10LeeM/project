@@ -61,7 +61,7 @@ const useStyles: any = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-end",
-    padding: "0 8px",
+    padding: "0 2px",
     ...theme.mixins.toolbar,
   },
   appBar: {
@@ -166,6 +166,7 @@ const DashboardLayout: FC = ({ children }) => {
               edge="start"
               color="inherit"
               aria-label="open drawer"
+              
               onClick={handleDrawerOpen}
               className={clsx(
                 classes.menuButton,
@@ -188,14 +189,7 @@ const DashboardLayout: FC = ({ children }) => {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <IconButton
-              color="inherit"
-              onClick={() => h.push(paths.common.cart)}
-            >
-              <Badge badgeContent={cart.length} color="secondary">
-                <ShoppingBasket />
-              </Badge>
-            </IconButton>
+           
             <IconButton color="inherit">
               <Badge badgeContent={2} color="secondary">
                 <AccountBalanceWallet />

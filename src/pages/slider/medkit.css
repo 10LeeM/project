@@ -6,12 +6,19 @@
     text-align: center;
     flex-wrap: wrap;
 }
-
+.header h1{
+    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
 .col{
     flex: 20%;
     padding: 10px;
     max-width: 280px;
     box-sizing: border-box;
+    padding-top: 10px;
 }
 .table{
     background: #00cce4;

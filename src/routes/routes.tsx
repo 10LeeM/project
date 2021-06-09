@@ -10,6 +10,7 @@ import NotFound from "../components/layout/NotFound";
 import Doctors from "../pages/admin/Doctors";
 import Patients from "../pages/admin/Patients";
 import Products from "../pages/admin/Products";
+
 import Vitals from "../pages/patient/Vitals";
 import Doctorshome from "../pages/guests/Doctorshome";
 import Pharmacyhome from "../pages/guests/Pharmacyhome";
@@ -35,6 +36,8 @@ import CookiesPolicy from "../pages/guests/CookiesPolicy";
 
 import Checkout from "../pages/guests/display/Checkout";
 import Medkit from "../pages/slider/Medkit";
+import  Dashboard  from "../components/common/Dashboard";
+import MedkitAdmin from "../pages/admin/MedkitAdmin";
 // import PatientProducts from "../pages/patient/PatientProducts";
 
 const Routes = () => {
@@ -70,7 +73,7 @@ const Routes = () => {
         <GuestRoute path={paths.cart} component={Cart} exact />
         <GuestRoute path={paths.checkout} component={Checkout} exact />
         <GuestRoute path={paths.footer} component={Footer} exact />
-        {/* <DashRoute path={paths.dashboard} component={Dummy} /> */}
+        
 
         {/* Admin */}
         <DashRoute path={paths.admin.doctors} component={Doctors} />
@@ -80,6 +83,8 @@ const Routes = () => {
         <DashRoute path={paths.admin.history} component={HistoryAdmin} />
         <DashRoute path={paths.admin.messages} component={MessagesAdmin} />
         <GuestRoute path={paths.admin.message} component={Message} exact />
+        <DashRoute path={paths.common.dashboard} component={Dashboard} exact />
+        <DashRoute path={paths.admin.medkit} component={MedkitAdmin} exact />
 
         {/* Doctor */}
         <DashRoute path={paths.doctor.patients} component={Patients} />
@@ -93,6 +98,7 @@ const Routes = () => {
         <DashRoute path={paths.patient.orders} component={PatientsOrders} />
         <DashRoute path={paths.patient.checkout} component={Checkout} />
         <DashRoute path={paths.common.products} component={PatientProducts} />
+     
         <DashRoute
           path={paths.patient.productspatients}
           component={PatientProducts}

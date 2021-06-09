@@ -6,6 +6,7 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import { getRole } from "../../store/slices/userSlice";
+import AssessmentIcon from '@material-ui/icons/Assessment';
 import { useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
 import paths from "../../routes/paths";
@@ -16,6 +17,7 @@ import {
   ShoppingBasket,
   Event,
   AccessibilityNew,
+  
 } from "@material-ui/icons";
 
 type TLink = {
@@ -27,7 +29,7 @@ type TLink = {
 const patient: TLink[] = [
   {
     icon: <DashboardIcon />,
-    path: paths.dashboard,
+    path: paths.common.dashboard,
     title: "Dashboard",
   },
   {
@@ -71,7 +73,7 @@ const patient: TLink[] = [
 const pharmacy: TLink[] = [
   {
     icon: <DashboardIcon />,
-    path: paths.dashboard,
+    path: paths.common.dashboard,
     title: "Dashboard",
   },
   {
@@ -95,7 +97,7 @@ const pharmacy: TLink[] = [
 const doctors: TLink[] = [
   {
     icon: <DashboardIcon />,
-    path: paths.dashboard,
+    path: paths.common.dashboard,
     title: "Dashboard",
   },
   {
@@ -129,7 +131,7 @@ const doctors: TLink[] = [
 const admin: TLink[] = [
   {
     icon: <DashboardIcon />,
-    path: paths.dashboard,
+    path: paths.common.dashboard,
     title: "Dashboard",
   },
   {
@@ -151,6 +153,11 @@ const admin: TLink[] = [
     icon: <ShoppingCartIcon />,
     path: paths.admin.orders,
     title: "Orders",
+  },
+  {
+    icon: <AssessmentIcon />,
+    path: paths.admin.medkit,
+    title: "Medkit",
   },
 
   {

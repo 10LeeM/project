@@ -12,7 +12,7 @@ const Guest: FC = ({ children }) => {
 
   useEffect(() => {
     if (loggedIn && l.pathname !== paths.cart) {
-      h.push(paths.dashboard);
+      h.push(paths.common.dashboard);
     }
   }, [loggedIn, h, l]);
 

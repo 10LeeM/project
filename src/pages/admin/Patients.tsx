@@ -212,7 +212,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
           align="left"
           component="div"
         >
-          Doctors
+          Patients
         </Typography>
       )}
       {numSelected > 0 ? (

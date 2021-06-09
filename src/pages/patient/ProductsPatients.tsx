@@ -221,7 +221,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
           align="left"
           component="div"
         >
-          products
+          Products
         </Typography>
       )}
 
