@@ -29,8 +29,8 @@ const DoctorsDisplay = () => {
           </div>
           <p>500/=</p>
           <div>
-          <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+          <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
           </div> 
          
           </div>
@@ -46,8 +46,8 @@ const DoctorsDisplay = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+          <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -60,8 +60,8 @@ const DoctorsDisplay = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+          <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -74,8 +74,8 @@ const DoctorsDisplay = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+          <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
         </div>
       </div>
     </div>      
@@ -97,8 +97,8 @@ const DoctorsDisplay = () => {
           </div>
           <p>500/=</p>
           <div>
-          <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+          <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
           </div>
          
         </div>
@@ -113,8 +113,8 @@ const DoctorsDisplay = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-         <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+         <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -127,8 +127,8 @@ const DoctorsDisplay = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+          <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -141,8 +141,8 @@ const DoctorsDisplay = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-         <a  href ="/register"  className="btn">Consult</a>
-          <a href ="/register" className="btn">Book</a>
+         <a  href ="/register"  className="btn1">Consult</a>
+          <a href ="/register" className="btn1">Book</a>
         </div>
       </div>
     </div>   

@@ -1,12 +1,12 @@
 .ourservices__card {
   height: 250px;
-  width: 350px;
+  width: 320px;
   z-index: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
   line-height: normal;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .ourservices__cardtitle {
@@ -44,4 +44,11 @@
   /* width: 1200px; */
   margin-left: auto;
   margin-right: auto;
+}
+.titl{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline #00cce4 3px;
 }

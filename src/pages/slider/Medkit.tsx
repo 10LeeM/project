@@ -10,6 +10,7 @@ import MedkitSlider from './MedkitSlider';
 import image1 from "./assets/individual.jpg";
 import image2 from "./assets/family.jpg";
 import image3 from "./assets/group.jpg";
+import MedkitInfo from './MedkitInfo';
 
 
 
@@ -18,6 +19,7 @@ const Medkit = () => {
   return <>
   <div>
     <MedkitSlider images={[image1 , image2, image3]}/>
+    <MedkitInfo/>
     <div className="header"><h1>Our Medical Kit</h1></div> 
     <div className="medkit">
     

@@ -31,8 +31,10 @@ const Ourservices = () => {
    
   ];
 
+
   return (
     <div className="ourservices">
+      <div className="titl">Our Values</div>
       <div className="ourservices__row">
         {servcices.map(({ description, icon, title }, i) => (
           <div key={i} className="ourservices__card">

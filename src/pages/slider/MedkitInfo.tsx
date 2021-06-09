@@ -1,24 +1,29 @@
 import React from "react";
 
-import "./doctorservices.css";
+import "./medkitinfo.css";
 
 const DoctorServices = () => {
   const servcices = [
     {
-      icon: "calendar",
-      title: "Book or Call a Doctor Anytime",
+      icon: "heart-monitor",
+      title: "Around the clock Monitor",
      
     },
     {
-        icon: "users",
-        title: "Peace of mind! Healthcare in  one place. ",
+        icon: "hospital",
+        title: "Doctor 24/7 ",
         
       },
     {
-      icon: "wallet",
-      title: "Easy to pay and buy ",
+      icon: "capsule",
+      title: "Medicine at your door ",
      
     },
+    {
+        icon: "ambulance",
+        title: "Emergency Response ",
+       
+      },
     
    
    
@@ -26,7 +31,7 @@ const DoctorServices = () => {
 
   return (
     <div className="doctorservices">
-      <div className="commitment">Our Commitment</div>
+      <div className="commitment">You Control Your Health</div>
       <div className="doctorservices__row">
         {servcices.map(({  icon, title }, i) => (
           <div key={i} className="doctorservices__card">

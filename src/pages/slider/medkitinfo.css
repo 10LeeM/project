@@ -1,12 +1,12 @@
 .doctorservices__card {
     height: 290px;
-    width: 350px;
+    width: 300px;
     z-index: 1;
     display: flex;
     flex-direction: column;
     text-align: center;
     line-height: normal;
-
+    padding-top: 60px;
     padding-bottom: 80px;
   }
   
@@ -52,5 +52,6 @@
     font-size: 30px;
     text-decoration: underline #00cce4 3px;
     font-weight: bold;
+    padding-top: 60px;
   }
   

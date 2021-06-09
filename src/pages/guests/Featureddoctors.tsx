@@ -23,7 +23,7 @@ const Featureddoctors = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a  href ="/"  className="btn">Consult</a>
+          <a  href ="/"  className="btn1">Consult</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -32,7 +32,7 @@ const Featureddoctors = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a href ="/" className="btn">Consult</a>
+          <a href ="/" className="btn1">Consult</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -41,7 +41,7 @@ const Featureddoctors = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a href ="/" className="btn">Consult</a>
+          <a href ="/" className="btn1">Consult</a>
         </div>
         <div className="col-3">
           <img src="image/home.jpg" alt=""/>
@@ -50,11 +50,11 @@ const Featureddoctors = () => {
             <i className="fa fa-star" />
           </div>
           <p>500/=</p>
-          <a href ="/" className="btn">Consult</a>
+          <a href ="/" className="btn1">Consult</a>
         </div>
       </div>
     </div>    
-    <a href="/register" className="btn"><i className="fa fa-arrow-right" />View All Doctors</a>  
+    <a href="/register" className="btn1"><i className="fa fa-arrow-right" />View All Doctors</a>  
   </div>
 
   </div>

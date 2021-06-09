@@ -14,7 +14,7 @@ const Home = () => {
             <p>Ohospital allows patients to easily and quickly find doctors and follow up with them as needed. And, 
               allows for doctors to effectively manage how they offer services. </p>
               <div className="home-btn">
-            <a href="/" className="btn"><i className="fa fa-android" />Download App</a>
+            <a href="/" className="btn1"><i className="fa fa-android" />Download App</a>
             <a href="/register" className="btn2"><i className="fa fa-calendar" />Book Doctor</a>
             </div>
           </div>

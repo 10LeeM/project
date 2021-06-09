@@ -6,8 +6,9 @@ import DoctorServices from "./DoctorServices";
 
 const Mission = () => {
   return (
+    <div>
     <div className="mission__row">
-      <div className="mission__paragraph">
+      <div className="mission__paragrap">
      
         <h1>Our Mission</h1>
         <p>
@@ -24,17 +25,19 @@ const Mission = () => {
           <br />
          get treatment whether they can pay or not.
         </p>
-        <a href="/about" className="btn"><i className="fa fa-android" />Learn More</a>
+        <a href="/about" className="btn0"><i className="fa fa-android" />Learn More</a>
       </div>
       <div className="mission__image">
         <img src="/image/mission.jpg" alt="my hospital" />
       </div>
 
-      <DoctorServices/>
+     
+     <div>   <DoctorServices/></div>
+   
       <Appdoctor/>
     
         <Featureddoctors/>
-     
+        </div>
     </div>
   );
 };

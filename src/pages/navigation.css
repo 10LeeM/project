@@ -73,7 +73,7 @@ p{
 
 }
 
-.btn {
+.btn1 {
   display: inline-block;
   background: #00cce4;
   color: #fff;
@@ -83,11 +83,11 @@ p{
   transition: background 0.5s;
 }
 
-.btn:hover {
+.btn1:hover {
   background: chocolate;
 }
 
-.btn i {
+.btn1 i {
   color: #fff;
   padding: 5px;
   letter-spacing: 5px;
