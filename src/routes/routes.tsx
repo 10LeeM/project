@@ -38,6 +38,11 @@ import Checkout from "../pages/guests/display/Checkout";
 import Medkit from "../pages/slider/Medkit";
 import  Dashboard  from "../components/common/Dashboard";
 import MedkitAdmin from "../pages/admin/MedkitAdmin";
+import DoctorAppointment from "../pages/doctor/DoctorAppointment";
+import DoctorMessage from "../pages/doctor/DoctorMessage";
+import DoctorHistory from "../pages/doctor/DoctorHistory";
+import DoctorOrder from "../pages/doctor/DoctorOrder";
+import DoctorPatient from "../pages/doctor/DoctorPatient";
 // import PatientProducts from "../pages/patient/PatientProducts";
 
 const Routes = () => {
@@ -88,6 +93,14 @@ const Routes = () => {
 
         {/* Doctor */}
         <DashRoute path={paths.doctor.patients} component={Patients} />
+        <DashRoute path={paths.doctor.doctorappointment} component={DoctorAppointment} />
+        <DashRoute path={paths.doctor.doctormessage} component={DoctorMessage} />
+        <DashRoute path={paths.doctor.doctorhistory} component={DoctorHistory} />
+        <DashRoute path={paths.doctor.doctororder} component={DoctorOrder} />
+        <DashRoute path={paths.doctor.doctorpatient} component={DoctorPatient} />
+
+        
+        
 
         {/* client */}
         <DashRoute path={paths.doctors} component={Doctors} />

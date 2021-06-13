@@ -42,6 +42,11 @@ const paths = {
   },
   doctor: {
     patients: "/patients",
+    doctorappointment: "/doctorappointment",
+    doctorhistory: "/doctorhistory",
+    doctormessage: "/doctormessage",
+    doctorpatient: "/doctorpatient",
+    doctororder: "/doctororder",
   },
   admin: {
     doctors: "/admin/doctors",
