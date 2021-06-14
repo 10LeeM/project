@@ -1,48 +1,82 @@
-import React, { useCallback, useMemo, useState } from "react";
-import { useQuery } from "react-query";
-import { useSelector } from "react-redux";
-import { sendReq } from "../../api/api";
-import { getUserProfile } from "../../store/slices/userSlice";
+import React from 'react';
+import { withStyles, Theme, createStyles, makeStyles } from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
 
-const Vitals = () => {
-  const user = useSelector(getUserProfile);
-  const endpoints = useMemo(
-    () => [`blood-pressures`, `body-temperatures`, `pulse-rates`],
-    []
-  );
-  // const endpoints =
-  const [index, setIndex] = useState(0);
-
-  const fetchVitals = useCallback(async () => {
-    return await sendReq({
-      endpoint: `/patients/${user?.id}/${endpoints[index]}`,
-      method: "GET",
-      auth: true,
-    });
-  }, [endpoints, index, user?.id]);
-
-  useQuery(
-    `Get patients vitals at ${index} and end point ${endpoints[index]}`,
-    async () => {
-      return await fetchVitals();
+const StyledTableCell = withStyles((theme: Theme) =>
+  createStyles({
+    head: {
+      backgroundColor: theme.palette.common.black,
+      color: theme.palette.common.white,
     },
-    {
-      onSuccess(data) {
-        if (index < endpoints.length - 1) {
-          setIndex(index + 1);
-        }
-        console.log(data);
-      },
-      onError(err) {
-        console.log(err);
-        if (index < endpoints.length - 1) {
-          setIndex(index + 1);
-        }
-      },
-      retry: false,
-    }
-  );
-  return <div></div>;
-};
+    body: {
+      fontSize: 14,
+    },
+  }),
+)(TableCell);
 
-export default Vitals;
+const StyledTableRow = withStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      '&:nth-of-type(odd)': {
+        backgroundColor: theme.palette.action.hover,
+      },
+    },
+  }),
+)(TableRow);
+
+function createData(name: string, calories: number, fat: number, carbs: number, protein: string) {
+  return { name, calories, fat, carbs, protein };
+}
+
+const rows = [
+  createData('Frozen yoghurt', 159, 6.0, 24, 'Health'),
+  createData('Ice cream sandwich', 237, 9.0, 37, 'Health'),
+  createData('Eclair', 262, 16.0, 24, 'Health'),
+  createData('Cupcake', 305, 3.7, 67, 'Health'),
+  createData('Gingerbread', 356, 16.0, 49, 'Health'),
+];
+
+const useStyles = makeStyles({
+  table: {
+    minWidth: 700,
+  },
+});
+
+export default function Vitals() {
+  const classes = useStyles();
+
+  return (
+    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="customized table">
+        <TableHead>
+          <TableRow>
+            <StyledTableCell>User </StyledTableCell>
+            <StyledTableCell align="right">Blood Pressure</StyledTableCell>
+            <StyledTableCell align="right">Body Temperature</StyledTableCell>
+            <StyledTableCell align="right">Pulse Rates</StyledTableCell>
+            <StyledTableCell align="right">Comment</StyledTableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <StyledTableRow key={row.name}>
+              <StyledTableCell component="th" scope="row">
+                {row.name}
+              </StyledTableCell>
+              <StyledTableCell align="right">{row.calories}</StyledTableCell>
+              <StyledTableCell align="right">{row.fat}</StyledTableCell>
+              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+            </StyledTableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+}
