@@ -17,6 +17,7 @@ const paths = {
   productview: "/product/:id",
   footer: "/footer",
   checkout: "/checkout",
+  ordermedkit: "/ordermedkit",
 
   common: {
     // appointments: "/appointments",

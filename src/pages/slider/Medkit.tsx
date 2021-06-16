@@ -31,8 +31,9 @@ const Medkit = () => {
           <span>per month</span>
         </div>
         <ul>
-          <li><strong>1</strong>Doctor</li>
           <li><strong>1</strong>Insurance</li>
+          <li><strong>1</strong>Paying</li>
+          <li><strong>1</strong>Purchase</li>
         </ul>
         <a href="/">Order Now</a>
       </div>
@@ -49,6 +50,8 @@ const Medkit = () => {
         <ul>
           <li><strong>1</strong>Doctor</li>
           <li><strong>1</strong>Insurance</li>
+          <li><strong>1</strong>Paying</li>
+          <li><strong>1</strong>Purchase</li>
         </ul>
         <a href="/">Order Now</a>
       </div>
@@ -61,8 +64,11 @@ const Medkit = () => {
           <span>per month</span>
         </div>
         <ul>
-          <li><strong>1</strong>Doctor</li>
+        <li><strong>1</strong>Doctor</li>
           <li><strong>1</strong>Insurance</li>
+          <li><strong>1</strong>Paying</li>
+          <li><strong>1</strong>Purchase</li>
+          <li><strong>1</strong>Emergency Response</li>
         </ul>
         <a href="/">Order Now</a>
       </div>
@@ -75,8 +81,10 @@ const Medkit = () => {
           <span>per month</span>
         </div>
         <ul>
-          <li><strong>1</strong>Doctor</li>
+        <li><strong>1</strong>Doctor</li>
           <li><strong>1</strong>Insurance</li>
+          <li><strong>1</strong>Paying</li>
+          <li><strong>1</strong>Purchase</li>
         </ul>
         <a href="/">Order Now</a>
       </div>
@@ -89,7 +97,7 @@ const Medkit = () => {
           <span>per month</span>
         </div>
         <ul>
-          <li><strong>1</strong>Doctor</li>
+         
           <li><strong>1</strong>Insurance</li>
         </ul>
         <a href="/">Order Now</a>

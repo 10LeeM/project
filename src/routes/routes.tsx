@@ -43,6 +43,7 @@ import DoctorMessage from "../pages/doctor/DoctorMessage";
 import DoctorHistory from "../pages/doctor/DoctorHistory";
 import DoctorOrder from "../pages/doctor/DoctorOrder";
 import DoctorPatient from "../pages/doctor/DoctorPatient";
+import OrderMedkit from "../pages/slider/OrderMedkit";
 // import PatientProducts from "../pages/patient/PatientProducts";
 
 const Routes = () => {
@@ -78,6 +79,7 @@ const Routes = () => {
         <GuestRoute path={paths.cart} component={Cart} exact />
         <GuestRoute path={paths.checkout} component={Checkout} exact />
         <GuestRoute path={paths.footer} component={Footer} exact />
+        <GuestRoute path={paths.ordermedkit} component={OrderMedkit} exact />
         
 
         {/* Admin */}
