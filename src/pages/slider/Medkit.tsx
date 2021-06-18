@@ -35,7 +35,7 @@ const Medkit = () => {
           <li><strong>1</strong>Paying</li>
           <li><strong>1</strong>Purchase</li>
         </ul>
-        <a href="/">Order Now</a>
+        <a href="/ordermedkit">Order Now</a>
       </div>
       </div>
      
@@ -70,7 +70,7 @@ const Medkit = () => {
           <li><strong>1</strong>Purchase</li>
           <li><strong>1</strong>Emergency Response</li>
         </ul>
-        <a href="/">Order Now</a>
+        <a href="/ordermedkit">Order Now</a>
       </div>
         </div>
         <div className="col">
@@ -86,7 +86,7 @@ const Medkit = () => {
           <li><strong>1</strong>Paying</li>
           <li><strong>1</strong>Purchase</li>
         </ul>
-        <a href="/">Order Now</a>
+        <a href="/ordermedkit">Order Now</a>
       </div>
         </div>
         <div className="col">
@@ -100,7 +100,7 @@ const Medkit = () => {
          
           <li><strong>1</strong>Insurance</li>
         </ul>
-        <a href="/">Order Now</a>
+        <a href="/ordermedkit">Order Now</a>
       </div>
         </div>
     </div>

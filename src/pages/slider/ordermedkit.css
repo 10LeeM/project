@@ -1,0 +1,74 @@
+.cont{
+    max-width: 1250px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding-left: 30px ;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.image-left{
+    max-width: 55%;
+}
+
+.image-left img {
+    height: 350px;
+    width: 80%;
+}
+.cont .medform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.order-topic{
+    font-size: 22px;
+    font-weight: 500;
+    color: #00cce4;
+    padding-bottom: 10px;
+}
+
+.cont form {
+    width: 40%;
+    margin-right: 30px;
+}
+.cont .input-input{
+    
+    width: 100%;
+    margin: 16px 0;
+    
+}
+
+.cont .input-input label{
+  font-size: 15px;
+  color: #333;
+    
+}
+
+.cont .input-input input{
+    
+    width: 100%;
+    border-radius: 6px;
+  
+    outline: none;
+}
+
+.cont input[type="submit"]{
+    color: #00cce4;
+   
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cont input[type="submit"]:hover{
+    background-color: #333;
+   
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
